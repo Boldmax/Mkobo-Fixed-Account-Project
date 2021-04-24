@@ -1,0 +1,134 @@
+:root{
+  --primary-white:#ffffff;
+  --primary-blue: #0248CD;
+  --primary-ligtGrey: #a9b1c0;
+  --primary-darkGrey: #676e7d;
+  --primary-darkBlue: #233862;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+    
+
+      /***********   EmailConfirm  ****************/
+
+      .EmailConfirm{
+        display: block;
+        position: absolute;
+        margin: auto;
+        width: 40vw;
+        height: 90vh;
+        margin-left: 8rem;
+        margin-top: -33rem;
+        background:#ffffff;
+        box-shadow: 6px 6px 15px 4px rgba(29, 17, 100, 0.04);
+      }
+
+      .EmailConfirm p{
+        display: block;
+        width: 35vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 3rem;
+        font-size: 1rem;
+      }
+
+      .EmailConfirm h5{
+        display: block;
+        width: 25vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5rem;
+        color: #0248CD;
+        font-weight: bold;
+      }
+
+      .WrongPassword{
+        display: block;
+        position: relative;
+        margin: auto;
+        width: 600px; 
+        height: 672px;
+        box-shadow: 6px 6px 15px 4px rgba(29, 17, 100, 0.04);
+        z-index: 3;
+      }
+
+      .WrongPassword h5{
+        display: block;
+        width: 15vw;
+        margin-left: 3rem;
+        padding-top: 5rem;
+        color: #0248CD;
+        font-weight: 700;
+        font-size: 16px;
+      }
+
+      .WrongPassword p{
+        display: block;
+        width: 472px;
+        height: 46px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #233862;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+      }
+
+      #ptop{
+        margin-top: 15px;
+        margin-bottom: 60px;
+      }
+
+      #pbottom{
+        margin-top: 50px;
+        margin-bottom: 60px;
+      }
+
+      #reset{
+       font-size: 14px;
+       font-style: normal;
+       font-weight: 600;
+       line-height: 21px;
+       letter-spacing: 0em;
+       text-align: center;
+
+      }
+
+      h6{
+        display: block;
+        width: 339px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 3rem;
+        color: #AAC6CE;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 150%;
+      }
+
+      .PasswordReset{
+        display: block;
+        margin: auto;
+        width: 80vw;
+        height: 90vh;
+      }
+
+      .PasswordReset h3{
+        display: block;
+        width: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 2rem;
+      }
+
+      .PasswordReset h5{
+        display: block;
+        width: 31vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 2rem;
+      }

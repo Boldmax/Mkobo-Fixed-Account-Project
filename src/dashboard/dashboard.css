@@ -1,0 +1,870 @@
+/******************************* DASHBOARD ****************************************/
+:root{
+    --primary-white:#ffffff;
+    --primary-blue: #0248CD;
+    --primary-ligtGrey: #a9b1c0;
+    --primary-darkGrey: #676e7d;
+    --primary-darkBlue: yellow;
+  }
+
+@media screen and (max-width: 1440px) {
+    /*************** DASHBOARD CONTAINER **************/
+    .dashboard{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: max-content;
+        background: #f8f8f8;
+      }
+
+    /*************** Vertical Nav **************/
+
+      .dashboard-nav{
+        display: block;
+        height: 100vh;
+        width: 270px;
+        max-width: 1500px;
+        margin-top: 0.3rem;
+        box-shadow: 2px 0px 11px 0px #2338620D;
+        background-color: var(--primary-white);
+        padding-bottom: 8rem;
+        z-index: 1;
+      }
+
+      .nav-close{
+        margin-top: 1rem;
+      }
+
+      .nav-components{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+      }
+
+      .nav-components p, Link{
+        display: block;
+        position: relative;
+        color: #AAC6CE;
+        font-size: 1.5rem;
+        width: 15.8rem;
+        padding: 20px 10px 20px 50px;
+      }
+
+      .nav-components p span{
+        font-size: 0.9rem;
+        padding-left: 1.2rem;
+        font-size: 14px;
+        font-weight: 600;
+        line-height:21.85px;
+      }
+
+      .nav-components p:hover{
+        background-color: rgba(2, 72, 205, 0.27);
+        color: #0248CD;
+       }
+
+       #nav-social{
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         padding-bottom: 14rem;
+         background: #ffffff;
+       }
+
+       #social {
+        color: #0248CD;
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+        margin-right: 25px;
+       }
+
+       #logout {
+        margin-top: 5rem; 
+        margin-left: 4rem;
+        }
+
+        #logout p{
+          margin-top: 5px; 
+          margin-left: 20px;
+          line-height: 45px;
+          font-weight: 700;
+          }
+
+    /*************** Dashboard Body **************/    
+
+
+.h-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rem;
+    margin-left: 4rem;
+}
+
+.AccountNav{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2rem;
+}
+
+ h3{
+   display: flex;
+   position: absolute;
+   margin-left: 4.5rem;
+   margin-top: 64px;
+   font-size: 32px;
+   color: #233862;
+   font-weight: 600;
+   line-height:37.89px;
+   width: 267px;
+}
+
+.h-nav p{
+  display: block;
+  width: 18rem;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 600;
+  color: #AAC6CE;
+}
+
+.h-nav Link, p:hover{
+  color: #0248CD;
+}
+
+.AccountCompo{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  padding-bottom: 8rem;
+  height: max-content;
+  background-color: #eeeded;
+}
+
+#logout{
+display: block;
+position: relative;
+margin-top: 6rem;
+margin-left: 4rem;
+}
+
+#logout p{
+  display: block;
+  width: 14rem;
+  margin: 1rem 2.6rem;
+  font-size: 1rem;
+  color: rgb(238, 87, 87);
+}
+
+    /*************** investment deatails **************/
+.InvestmentDetails{
+    display: block;
+    height: max-content;
+    width: 65%;
+    margin: auto;
+    margin-top: 10rem;
+    }
+
+.InvestmentDetails h2{
+  display: flex;
+  position: relative;
+  color: #385692;
+  width: 18vw;
+  margin-left: 9rem;
+  margin-top: 3rem;
+  font-size: 24px;
+  font-weight: 600;
+  }
+
+  .InvestmentDetails span{
+  display: block;
+  width: 30rem;
+  margin: auto;
+  font-size: 14px;
+  }
+
+  .profileImage{
+    display: flex;
+  }
+
+  .profileImage a{
+    font-size: 14px;
+    margin-left: 2rem;
+    margin-top: 2.7rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #233862;
+  }
+
+.contentBody{
+    display: block;
+    position: relative;
+    width: 30rem;
+    height: max-content;
+    margin: auto;
+    margin-top: 3rem;
+    color: #385692;
+    padding-bottom: 4rem;
+}
+
+.profileImage img{
+  height: 104px;
+  width: 104px;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+
+ input{
+    width: 530px;
+    height: 56px;
+    margin: 1rem 0;
+    border: 1px solid rgba(93, 129, 162, 0.3);
+    border-radius: 5px;
+    background: #E5E5E5;
+    font-size: 16px;
+}
+
+ label{
+    display:block;
+    position: relative;
+    margin-left: 4px;
+    color: #233862;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+ select{
+    width: 530px;
+    height: 56px;
+    margin: 1rem 0;
+    border: 1px solid rgba(93, 129, 162, 0.3);
+    border-radius: 5px;
+    background: #E5E5E5;
+    font-size: 16px;
+}
+
+.contentBody button{
+    display: block;
+    position: relative;
+    width: 10rem;
+    margin: auto;
+    margin-top: 2.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    border: none;
+    color: var(--primary-white);
+    background-color: var(--primary-blue);
+}
+
+#BackButton1{
+margin-left: 23rem;
+}
+
+#BackButton2{
+  margin-left: 23rem;
+  }
+     /*************** personal deatails **************/
+
+ .PersonalDetails{
+    display: block;
+    height: max-content;
+    width: 65%;
+    background-color: var(--primary-white);
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    box-shadow: 5px 15px 20px 5px var(--primary-ligtGrey);
+  }
+
+.PD-container{
+  display: block;
+  position: relative;
+  width: 40rem;
+  height: max-content;
+  margin: auto;
+  margin-top: 3rem;
+  color: #385692;
+  padding-bottom: 4rem;
+}
+
+.block-1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.subBlock-1 select{
+  height: 2.9rem;
+  width: 18rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border: 2px solid var(--primary-ligtGrey);
+  border-radius: 5px;
+}
+
+.subBlock-1 label{
+  margin-bottom: -1rem;
+}
+
+.subBlock-1 input{
+  width: 18rem;
+  height: 2.9rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--primary-ligtGrey);
+  border-radius: 5px;
+}
+
+.block-2 input{
+  width: 37rem;
+  height: 2.9rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--primary-ligtGrey);
+  border-radius: 5px;
+}
+
+
+#proceed{
+  display: block;
+    position: relative;
+    width: 10rem;
+    margin:2rem 5rem 2rem 2rem;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    border: none;
+    color: var(--primary-white);
+    background-color: var(--primary-blue);
+}
+
+#proceed:hover{
+  color: var(--primary-blue);
+  background-color: var(--primary-white);
+  border: 2px solid var(--primary-blue);
+}
+
+    /*************** personal deatails **************/
+
+.NextofKinDetails{
+  display: block;
+  height: max-content;
+  width: 60rem;
+  background-color: var(--primary-white);
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  box-shadow: 5px 15px 20px 5px var(--primary-ligtGrey);
+}
+
+.alert-info {
+  display: block;
+  position: relative;
+  width: 85rem;
+  margin: 1rem auto 1rem auto;
+  background-color: #eeeded;
+}
+
+.alert-info p{
+  display: block;
+  position: relative;
+  width: 45rem;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  background-color: rgb(178, 208, 233);
+  color: #0248CD;
+}
+
+.displayControl{
+  display: flex;
+  flex-direction: column;
+}
+
+.InvestmentDetails span{
+margin-top: 15px;
+font-size: 14px;
+color: rgba(35, 56, 98, 1);
+font-weight: 400;
+}
+
+
+/*************** bank deatails **************/
+.bankDetails{
+  display: block;
+  height: max-content;
+  width: 60rem;
+  background-color: var(--primary-white);
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  box-shadow: 5px 15px 20px 5px var(--primary-ligtGrey);
+}
+
+.cardHolder{
+  display: block;
+  position: relative;
+  width: 55vw;
+  margin: auto;
+  margin-top: 8rem;
+}
+
+.cardContent label{
+  display: block;
+  position: relative;
+  width: auto;
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+
+/*************** View Active investment **************/
+.cardHolder h2{
+ font-size: 24px;
+ font-weight: 600;
+ color :rgba(35, 56, 98, 1);
+ margin-left: 8.3rem;
+ margin-top: 3rem;
+}
+
+.cardHolder p{ 
+  font-size: 15px;
+  font-weight: 400;
+  color :rgba(35, 56, 98, 1);
+  margin-left: 8.3rem;
+  margin-bottom: -1rem;
+}
+
+.cardContent{
+  margin-top: 2rem;
+}
+
+#label1{
+  position: absolute;
+  display: block;
+  width: 14rem;
+  color: #ffffff;
+  margin-top: 1.5rem;
+  margin-left: 25rem;
+  font-size: 0.9rem;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+#label2{
+position: absolute;
+display: block;
+width: 14rem;
+color: #ffffff;
+margin-top: 7rem;
+margin-left: 2rem;
+font-size: 12px;
+font-weight: 400;
+}
+
+#label3{
+position: absolute;
+display: block;
+width: 14rem;
+color: #ffffff;
+margin-top: 7rem;
+margin-left: 25rem;
+font-size: 12px;
+font-weight: 400;
+}
+/************************* Card And Bank Nav **************************/
+.CardsAnsBanksContainer{
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  width: 100%;
+  background: #f8f8f8;
+  padding-bottom: 7rem;
+}
+.Cardandbanks{
+ display: flex;
+ height: 5rem;
+ width: 100%;
+ flex-direction: column;
+}
+
+.Cardandbanks h2{
+display: block;
+width: 18rem;
+margin-top: 4rem;
+margin-left: 4rem;
+font-size: 32px;
+font-weight: 600;
+color: rgba(35, 56, 98, 1);
+}
+
+.CardandbanksNav{
+  display: flex;
+  width: 85%;
+  height: 4rem;
+  margin-left: 4.4rem;
+  border-bottom: 1px solid  rgba(170, 198, 206, 1);
+  ;
+}
+
+.CardandbanksNav a{
+display: block;
+width: 5rem;
+line-height: 21px;
+font-size: 14px;
+font-weight: 600;
+margin-left: 0rem;
+margin-top: 2.3rem;
+padding-bottom: 4px;
+text-decoration: none;
+}
+
+.CardandbanksNav a:hover{
+border-bottom: 3px solid var(--primary-blue);
+}
+
+.CardandbanksNav a:focus{
+  border-bottom: 3px solid rgba(2, 72, 205, 1);
+  color: rgba(2, 72, 205, 1);
+  }
+
+  .cardContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+    height: 60vh;
+    width: 100%;
+
+  }
+
+  .cardContainer h4{
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  color: rgba(2, 72, 205, 1);
+  }
+
+  #noCard{
+    display: block;
+    position: relative;
+    width: 341px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    margin: 1rem auto 0 auto;
+    color: rgba(170, 198, 206, 1);
+  }
+
+  .cardContainer button{
+    display: block;
+    width: 226px;
+    height: 65px;
+    margin: 1rem auto 0 auto;
+    background: rgba(2, 72, 205, 1);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+  }
+
+  .cardContainer img{
+    display: block;
+    margin: auto;
+    margin-top: 3rem;
+    width: 34%;
+    height: 58%;
+  }
+
+  #CardImg{
+    display: block;
+    margin: auto;
+    margin-top: 3rem;
+    width: 45%;
+    height: 58%;
+  }
+
+}
+
+@media screen and (max-width:1024px){
+
+  /*************** Vertical Nav **************/
+
+      .dashboard-nav{
+        display: block;
+        height: 100vh;
+        width: 220px;
+        margin-top: 0.3rem;
+        box-shadow: 2px 0px 11px 0px #2338620D;
+        background-color: var(--primary-white);
+        z-index: 1;
+      }
+
+      .nav-close{
+        margin-top: 1rem;
+      }
+
+      .nav-components{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+      }
+
+      .nav-components p, Link{
+        display: block;
+        position: relative;
+        color: #AAC6CE;
+        font-size: 1.5rem;
+        width: 13.8rem;
+        padding: 20px 1px 20px 30px;
+      }
+
+       #nav-social{
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+       }
+
+       #social {
+        color: #0248CD;
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+        margin-right: 25px;
+       }
+
+       #logout {
+        margin-top: 5rem; 
+        margin-left: 4rem;
+        }
+
+        #logout p{
+          margin-top: 5px; 
+          margin-left: 20px;
+          }
+
+  /*************** Dashboard Body **************/    
+
+.h-nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rem;
+  margin-left: 2rem;
+}
+
+h3{
+font-size: 28px;
+}
+
+.h-nav p{
+  display: block;
+  width: 16rem;
+  margin: auto;
+  margin: -15px auto;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.InvestmentDetails{
+  height: max-content;
+  width: 60%;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+input{
+  width: 380px;
+  height: 40px;
+  margin: 1rem 0;
+  margin-left: 5rem;
+}
+
+label{
+  margin-left: 5rem;
+  color: #233862;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+select{
+  width: 380px;
+  height: 40px;
+  margin: 1rem 0;
+  margin-left: 5rem;
+}
+
+#logout{
+  margin-left: 2rem;
+}
+
+.profileImage img{
+  height: 84px;
+  width: 84px;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+}
+
+#BackButton1{
+  margin-left: 19rem;
+  }
+  
+#BackButton2{
+    margin-left: 19rem;
+    }
+
+.cardHolder{
+  width: 50vw;
+  margin: auto;
+  margin-top: 8rem;
+  margin-left: 0.5rem;
+}
+
+#label1{
+  margin-left: 20.1rem;
+}
+
+#label2{
+  margin-left: 1rem;
+}
+
+#label3{
+  margin-left: 20.1rem;
+}
+
+.cardHolder h2{
+  font-size: 24px;
+  margin-left: 2.7rem;
+  margin-top: 3rem;
+ }
+ 
+ .cardHolder p{ 
+   font-size: 15px;
+   margin-left: 2.7rem;
+   margin-top: 1rem;
+ }
+
+   /*************** Account Nav **************/  
+
+ .h-nav p{
+  display: block;
+  width: 18rem;
+  margin: auto;
+  font-size: 14px;
+}
+
+#logout p{
+  margin-top: 19px; 
+  margin-left: 20px;
+  }
+
+  /*************** Account Nav **************/
+
+  .InvestmentDetails h2{
+    width: 23vw;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    font-size: 24px;
+    font-weight: 600;
+    }
+  
+    .InvestmentDetails span{
+    display: block;
+    width: 25rem;
+    margin: auto;
+    font-size: 13px;
+    margin-left: 5rem;
+    }
+  
+}
+
+@media screen and (max-width: 768px){
+
+  .AccountNav{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-top: 1rem;
+    margin-left: 4rem;
+  }
+
+  .AccountCompo{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-bottom: 8rem;
+    height: max-content;
+    background-color: #eeeded;
+  }
+
+  .InvestmentDetails{
+    display: block;
+    height: max-content;
+    width: 90%;
+    margin: auto;
+    margin-top: 4rem;
+    }
+
+    .contentBody{
+      width: 95%;
+      margin-top: 3rem;
+      margin-left: -2rem;
+      color: #385692;
+      padding-bottom: 4rem;
+  }
+  
+.h-nav {
+    margin-top: 10rem;
+}
+
+h3{
+  margin-left: 2.5rem;
+}
+
+.InvestmentDetails h2{
+  margin-left: 10rem;
+  margin-top: 3rem;
+  }
+
+ .InvestmentDetails span{
+    display: block;
+    width: 25rem;
+    margin-left: 3rem;
+    }
+
+  #header{
+    margin-left: 3rem;
+    width: 30rem;
+  }
+
+  .cardContent{
+    margin-left: 3rem;
+  }
+
+  .cardHolder h2{
+    margin-left: 3rem;
+   }
+   
+   .cardHolder p{ 
+     font-size: 14px;
+     margin-left: 3rem;
+     margin-bottom: -1rem;
+   }
+
+   #PS{
+    width: max-content;
+    margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+ 
+}

@@ -1,0 +1,2414 @@
+.App {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+  }
+  
+  .Landing-page{
+      background-color: var(--primary-ligtGrey);
+  }
+  
+  ::-webkit-scrollbar{
+   width: 14px;
+  }
+  
+  ::-webkit-scrollbar-track{
+   background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+    background: #555;
+  }
+
+  @media screen and (max-width: 1920px), screen and (max-height: 1080px)  {
+/******************************* NAVBAR***********************************************2560px*/
+
+    .navbar {
+      background-color: #ffffff;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      position: sticky;
+      top: 0;
+      z-index: 3;
+    }
+  
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100px;
+      max-width: 1500px;
+    }
+  
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      text-align: center;
+      margin-right: -35rem;
+    }
+  
+    .nav-links {
+      color: #0248CD;
+      text-decoration: none;
+      height: 100%;
+      margin-left: 3.5rem;
+    }
+  
+  
+    .fa-code {
+      margin-left: 1rem;
+    }
+  
+    .nav-item {
+      line-height: 45px;
+      margin-right: 2rem;
+    }
+  
+  .butOn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+    .nav-icon {
+      display: none;
+    }
+  
+    #imageMove{
+      margin-left: -33rem;
+    }
+
+    #spacediv{
+      height: 80px;
+      width: 25rem;
+    }
+
+     /******************************* HEADER****************************************/
+  
+  .header-body{
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 65vh !important;
+    margin-top: 0.3rem;
+    background-color: #ffffff;
+  }
+  
+  .header-subBody{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+  }
+  
+  .header-card1{
+    width: 50%;
+    height: 75vh;
+    background-color: #ffffff;
+  }
+  
+  .header-card1 h1{
+    display: block;
+    margin-top: 130px;
+    margin-left: 100px;
+    text-align: start;
+    color: #007bff;
+    font-size: 50px;
+    line-height: 54.51px;
+    font-weight: 700;
+    width: 580px;
+  }
+  
+  .header-card1 p{
+    display: block;
+    width: 530px;
+    margin-left: 100px;
+    text-align: start;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28.8px;
+    margin-top: 16px;
+  }
+
+  .header-card1 p:hover{
+    color: #000000;
+  }
+
+  .header-card1 h4{
+    height: 24px;
+    width: 287px;
+    margin-left: 100px;
+    margin-top: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: -0.015em;
+  }
+
+  #approval{
+    margin-left: 100px;
+    display: flex;
+  }
+
+  #img1{
+    margin-top: 23px;
+   height: 49px;
+   width: 127px;
+  }
+
+  #img2{
+    margin-top: 8px;
+    margin-left: 40px;
+    height: 63px;
+    width: 47px;
+  }
+  
+  .header-card1 button{
+    position: relative;
+    height: 50px;
+    width: 220px;
+    background-color: #0248CD;
+    color: #ffffff;
+    margin-left: 100px;
+    margin-top: 24px;
+    border: none;
+  }
+
+  .header-card1 button:hover{
+    color: #0248CD;
+    background-color: white !important;
+    border: 2px solid #0248CD;
+    
+  }
+  
+  span{
+    font-weight: bold;
+  }
+  
+  .header-card2{
+    width: 50%;
+    height: 75vh;
+    background-color: #ffffff;
+  }
+  
+  .header-card2 img{
+    width: 95%;
+    height: 60%;
+    margin-top: 98px;
+    margin-left: 3rem;
+  
+  }
+    
+/******************************* ADVANTAGES ****************************************/
+    
+    .main{
+      position: relative;
+      height: 140vh !important;
+      width: 100vw;
+      z-index: 2;
+      background-color: #0248CD;
+      margin-top: 0;
+    }
+    
+    .main h1{
+      position: relative;
+      display: block;
+      width: 340px;
+      padding-top: 5rem;
+      padding-bottom: 3rem;
+      font-size: 44px;
+      margin-right: auto;
+      margin-left: auto;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    
+    .sub-main{
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .illustration{
+      position: relative;
+      height: 110vh;
+      width: 52%;
+    }
+    
+    .reasons{
+      position: relative;
+      height: 120vh !important;
+      width: 48%;
+      margin-top: 10rem;
+    }
+    
+    .illustration img{
+      height: 95% !important;
+      width: 110% !important;
+      margin-left: -30px;
+    }
+    
+    .reason-card{
+      height: 42vh !important;
+      width: 48vw;
+    }
+    
+    
+    .reason-card h3{
+      position: relative;
+      display: block;
+      width: 530px;
+      font-weight: 700;
+      margin-left: 60px;
+      color: #ffffff;
+      font-size: 32px;
+      line-height: 48px;
+    }
+    
+    .reason-card p{
+      margin-left: 60px;
+      color: #ffffff;
+      font-size: 16px;
+      width: 40vw;
+      font-weight: 500;
+      line-height: 27.52px;
+    }
+  
+    .reason-card p:hover{
+      color: #ffffff;
+    }
+    
+    /******************************* TESTIMONIES ****************************************/
+    
+    .testimony-main{
+      position: relative;
+      display: block;
+      height: 70vh !important;
+      width: 100vw;
+      background-color: #ffffff;
+    }
+    
+    .testimony-main h2{
+      padding-top: 3rem;
+      width: 640px;
+      display: block;
+      margin: 0 auto ;
+      font-size: 40px;
+      color: #0248CD;
+      font-weight: 700;
+    }
+    
+    .content-position{
+      width: 75vw;
+      display: block;
+      margin: 0 auto ;
+    }
+    
+    .testimony-prop{
+      padding-top: 6rem;
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+    }
+    
+    .testimony{
+      display: block;
+      width: 60vw;
+      justify-content: space-around;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .testimony img{
+      display: block;
+      position: relative;
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .testimony p{
+      display: block !important;
+      position: relative;
+      width: 318.61px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      color: #7888A4;
+    }
+  
+    .testimony p:hover{
+      color: #7888A4;
+    }
+    
+    .card-body span{
+      font-size: 32px;
+    }
+    .card{
+      display: block;
+      width: 420px !important;
+      height: 424px !important;
+      border: none !important;
+      padding-top: 3rem;
+      border-radius: 1rem !important;
+      box-shadow: 6px 6px 12px 4px rgba(29, 17, 100, 0.04) !important;
+    }
+    
+    /******************************* FOOTER ****************************************/
+    
+    .footer-container{
+      position: relative;
+      display: block;
+      height: 75vh !important;
+      width: 100vw;
+      background-color: #013FB3;
+    }
+    
+    .Pcontainer{
+      padding-top: 4rem;
+      display: block;
+      width: 80vw;
+      height: 60vh;
+      margin: auto;
+    }
+    
+    .main-box{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    
+    .box1{
+      display: flex;
+      flex-direction: row;
+      width: 80vw;
+      height: 20vh;
+    }
+    
+    .sub-box1{
+     width: 40vw;
+     height: 20vh;
+    }
+    
+    .sub-box1 a img{
+      display: block;
+      width: 6.2rem;
+      height: 2.9rem;
+      margin-left: 1rem;
+    }
+    
+    .emptydiv{
+      width: 28rem;
+    }
+    .sub-box2{
+      width: 17rem !important;
+      display: flex;
+      float: right;
+      margin-top: 2.4rem;
+      margin-left: 2rem;
+    }
+    
+    .sub-box2 a{
+      margin-left: 2rem;
+      display: inline;
+      font-size: 1.5rem;
+      color: #ffffff;
+    }
+    
+    .box2{
+      width: 80vw;
+      height: 7vh;
+      border-bottom: 1px solid #ffffff ;
+    }
+    
+    .box2 a{
+      color: #ffffff !important;
+      font-size: 16px;
+      font-weight: bold;
+      width: 3rem;
+      justify-content: start !important;
+      text-decoration: none !important;
+    }
+    
+    .box3{
+      margin-top: 3rem;
+      width: 80vw;
+      height: 25vh;
+    }
+    
+    .box3 p{
+    color: #ffffff;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    }
+  
+    .box3 p:hover{
+      color: #ffffff;
+    }
+    
+    .box4{
+      width: 80vw;
+      height: 10vh;
+    }
+    
+    .box4 p{
+      display: block;
+      width: 30rem;
+      margin-top: 1rem !important;
+      color: #ffffff;
+      font-size: 1rem;
+      margin: auto;
+      }
+  
+      .box4 p:hover{
+        color: #ffffff;
+      }
+
+  }
+/***************************************************************                   ***1680****/
+@media screen and (max-width: 1680px) {
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-right: -18rem;
+  }
+
+  #imageMove{
+    margin-left: -16rem;
+  }
+  
+  #spacediv{
+    height: 20px;
+    width: 18rem;
+  }
+
+
+}
+
+/***************************************************************                   ***1536****/
+  @media screen and (max-width: 1536px) {
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      text-align: center;
+      margin-right: -18rem;
+    }
+
+    #imageMove{
+      margin-left: -16rem;
+    }
+    
+    #spacediv{
+      height: 20px;
+      width: 18rem;
+    }
+
+    .header-body{
+      position: relative;
+      display: block;
+      width: 100vw;
+      height: 75vh;
+      margin-top: 0.3rem;
+      background-color: #ffffff;
+    }
+
+    .header-card2 img{
+      width: 100%;
+      height: 380px;
+      margin-top: 98px;
+      margin-left: 1rem;
+
+    }
+
+    .header-card1 h1{
+      margin-left: 70px;
+      font-size: 46px;
+    }
+
+    .header-card1 p{
+      margin-left: 70px;
+      font-size: 16px;
+    }
+
+    #approval{
+      margin-left: 70px;
+      display: flex;
+    }
+  
+
+    .header-card1 button{
+      margin-left: 70px;
+
+    }
+  
+    .header-card1 h4{
+      height: 24px;
+      width: 287px;
+      margin-left: 70px;
+      margin-top: 60px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 29px;
+      letter-spacing: -0.015em;
+    }
+
+    .main{
+      position: relative;
+      height: 145vh;
+      width: 100vw;
+      z-index: 2;
+      background-color: #0248CD;
+      margin-top: 0;
+    }
+
+    .reasons{
+      position: relative;
+      height: 120vh;
+      width: 48%;
+      margin-top: 2rem;
+    }
+
+    .testimony-main{
+      position: relative;
+      display: block;
+      height: 83vh;
+      width: 100vw;
+      background-color: #ffffff;
+    }
+
+    .content-position{
+      width: 94vw;
+      display: block;
+      margin: 0 auto ;
+    }
+
+    .box4 p{
+      display: block;
+      width: 30rem;
+      color: #ffffff;
+      font-size: 1rem;
+      margin: auto;
+      }
+
+  }
+
+  @media screen and (max-width: 1440px), screen and (max-height:900px) {
+    
+    /******************************* NAVBAR************************************************1440px*/
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      text-align: center;
+      margin-right: -18rem;
+    }
+
+    #imageMove{
+      margin-left: -16rem;
+    }
+    
+    #spacediv{
+      height: 20px;
+      width: 18rem;
+    }
+
+    .header-body{
+      position: relative;
+      display: block;
+      width: 100vw;
+      height: 75vh !important;
+      margin-top: 0.3rem;
+      background-color: #ffffff;
+    }
+
+    .header-card2 img{
+      width: 100%;
+      height: 380px;
+      margin-top: 98px;
+      margin-left: 1rem;
+
+    }
+
+    .header-card1 h1{
+      margin-left: 70px;
+      font-size: 46px;
+    }
+
+    .header-card1 p{
+      margin-left: 70px;
+      font-size: 16px;
+    }
+
+    #approval{
+      margin-left: 70px;
+      display: flex;
+    }
+  
+
+    .header-card1 button{
+      margin-left: 70px;
+
+    }
+  
+    .header-card1 h4{
+      height: 24px;
+      width: 287px;
+      margin-left: 70px;
+      margin-top: 60px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 29px;
+      letter-spacing: -0.015em;
+    }
+
+    .main{
+      position: relative;
+      height: 145vh;
+      width: 100vw;
+      z-index: 2;
+      background-color: #0248CD;
+      margin-top: 0;
+    }
+
+    .reasons{
+      position: relative;
+      height: 120vh;
+      width: 48%;
+      margin-top: 2rem;
+    }
+
+    .testimony-main{
+      position: relative;
+      display: block;
+      height: 83vh;
+      width: 100vw;
+      background-color: #ffffff;
+    }
+
+    .content-position{
+      width: 94vw;
+      display: block;
+      margin: 0 auto ;
+    }
+
+    .box4 p{
+      display: block;
+      width: 30rem;
+      color: #ffffff;
+      font-size: 1rem;
+      margin: auto;
+      }
+  }
+  
+  @media screen and (max-width: 1366px) {
+    
+  /******************************* NAVBAR************************************************1366px*/
+  .navbar {
+    background-color: #ffffff;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    max-width: 1500px;
+  }
+
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-right: -20rem;
+  }
+
+  .nav-links {
+    color: #0248CD;
+    text-decoration: none;
+    height: 100%;
+    margin-left: 3.5rem;
+    font-size: 18px;
+  }
+
+
+  .fa-code {
+    margin-left: 1rem;
+  }
+
+  .nav-item {
+    line-height: 45px;
+    margin-right: 2rem;
+  }
+
+.butOn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .nav-icon {
+    display: none;
+  }
+
+  #imageMove{
+    margin-left: -18rem;
+  }
+  
+  #spacediv{
+    height: 20px;
+    width: 10rem;
+  }
+  
+  /******************************* HEADER****************************************/
+  
+  .header-body{
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100vh !important;
+    margin-top: 0.3rem;
+    background-color: #ffffff;
+  }
+  
+  .header-subBody{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+  }
+  
+  .header-card1{
+    width: 45%;
+    height: 75vh;
+    background-color: #ffffff;
+  }
+  
+  .header-card1 h1{
+    display: block;
+    margin-top: 130px;
+    margin-left: 70px;
+    text-align: start;
+    color: #007bff;
+    font-size: 46px;
+    line-height: 54.51px;
+    font-weight: 700;
+    width: 530px;
+  }
+  
+  .header-card1 p{
+    display: block;
+    width: 530px;
+    margin-left: 70px;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    margin-top: 16px;
+  }
+
+  .header-card1 p:hover{
+    color: #000000;
+  }
+
+  .header-card1 h4{
+    height: 24px;
+    width: 287px;
+    margin-left: 70px;
+    margin-top: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: -0.015em;
+  }
+
+  #approval{
+    margin-left: 70px;
+    display: flex;
+  }
+
+  #img1{
+    margin-top: 23px;
+   height: 49px;
+   width: 127px;
+  }
+
+  #img2{
+    margin-top: 8px;
+    margin-left: 40px;
+    height: 63px;
+    width: 47px;
+  }
+  
+  .header-card1 button{
+    position: relative;
+    height: 48px;
+    width: 200px;
+    background-color: #0248CD;
+    color: #ffffff;
+    margin-left: 70px;
+    margin-top: 24px;
+    border: none;
+  }
+
+  .header-card1 button:hover{
+    color: #0248CD;
+    background-color: white !important;
+    border: 2px solid #0248CD;
+    
+  }
+  
+  span{
+    font-weight: bold;
+  }
+  
+  .header-card2{
+    width: 55%;
+    height: 75vh;
+    background-color: #ffffff;
+  }
+  
+  .header-card2 img{
+    width: 751px;
+    height: 380px;
+    margin-top: 98px;
+    margin-left: 1rem;
+  }
+  
+  /******************************* ADVANTAGES ****************************************/
+  
+  .main{
+    position: relative;
+    height: 185vh !important;
+    width: 100vw;
+    z-index: 2;
+    background-color: #0248CD;
+    margin-top: 0;
+  }
+  
+  .main h1{
+    position: relative;
+    display: block;
+    width: 340px;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    font-size: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .sub-main{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .illustration{
+    position: relative;
+    height: 110vh;
+    width: 52%;
+  }
+  
+  .reasons{
+    position: relative;
+    height: 120vh;
+    width: 48%;
+    margin-top: 0rem;
+  }
+  
+  .illustration img{
+    height: 100%;
+    width: 115%;
+    margin-left: -30px;
+  }
+  
+  .reason-card{
+    height: 35vh;
+    width: 48vw;
+  }
+  
+  
+  .reason-card h3{
+    position: relative;
+    display: block;
+    width: 530px;
+    font-weight: 700;
+    margin-left: 60px;
+    color: #ffffff;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  
+  .reason-card p{
+    margin-left: 60px;
+    color: #ffffff;
+    font-size: 16px;
+    width: 40vw;
+    font-weight: 500;
+    line-height: 27.52px;
+  }
+
+  .reason-card p:hover{
+    color: #ffffff;
+  }
+  
+  /******************************* TESTIMONIES ****************************************/
+  
+  .testimony-main{
+    position: relative;
+    display: block;
+    height: 100vh !important;
+    width: 100vw;
+    background-color: #ffffff;
+  }
+  
+  .testimony-main h2{
+    padding-top: 3rem;
+    width: 640px;
+    display: block;
+    margin: 0 auto ;
+    font-size: 40px;
+    color: #0248CD;
+    font-weight: 700;
+  }
+  
+  .content-position{
+    width: 94vw;
+    display: block;
+    margin: 0 auto ;
+  }
+  
+  .testimony-prop{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  
+  .testimony{
+    display: block;
+    width: 60vw;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .testimony img{
+    display: block;
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .testimony p{
+    display: block !important;
+    position: relative;
+    width: 318.61px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #7888A4 !important;
+  }
+
+  .testimony p:hover{
+    color: #7888A4;
+  }
+  
+  .card-body span{
+    font-size: 32px;
+  }
+  .card{
+    display: block;
+    width: 420px !important;
+    height: 424px !important;
+    border: none !important;
+    padding-top: 3rem;
+    border-radius: 1rem !important;
+    box-shadow: 6px 6px 12px 4px rgba(29, 17, 100, 0.04) !important;
+  }
+  
+  /******************************* FOOTER ****************************************/
+  
+  .footer-container{
+    position: relative;
+    display: block;
+    height: 100vh !important;
+    width: 100vw;
+    background-color: #013FB3;
+  }
+  
+  .Pcontainer{
+    padding-top: 4rem;
+    display: block;
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+  }
+  
+  .main-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .box1{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: 20vh;
+  }
+  
+  .sub-box1{
+   width: 40vw;
+   height: 20vh;
+  }
+  
+  .sub-box1 a img{
+    display: block;
+    width: 6.2rem;
+    height: 2.9rem;
+    margin-left: 1rem;
+  }
+  
+  .emptydiv{
+    width: 46rem;
+  }
+  .sub-box2{
+    width: 17rem !important;
+    display: flex;
+    float: right;
+    margin-top: 2.4rem;
+    margin-left: 2rem;
+  }
+  
+  .sub-box2 a{
+    margin-left: 2rem;
+    display: inline;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  
+  .box2{
+    width: 80vw;
+    height: 7vh;
+    border-bottom: 1px solid #ffffff ;
+  }
+  
+  .box2 a{
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: bold;
+    width: 3rem;
+    justify-content: start !important;
+    text-decoration: none !important;
+  }
+  
+  .box3{
+    margin-top: 3rem;
+    width: 80vw;
+    height: 25vh;
+  }
+  
+  .box3 p{
+  color: #ffffff;
+  font-size: 0.9rem;
+  }
+
+  .box3 p:hover{
+    color: #ffffff;
+  }
+  
+  .box4{
+    width: 80vw;
+    height: 10vh;
+  }
+  
+  .box4 p{
+    display: block;
+    width: 30rem;
+    margin-top: 8.2rem !important;
+    color: #ffffff;
+    font-size: 1rem;
+    margin: auto;
+    }
+
+    .box4 p:hover{
+      color: #ffffff;
+    }
+  }
+  
+  @media screen and (max-width: 1280px) {
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      text-align: center;
+      margin-right: -14rem;
+    }
+
+    #imageMove{
+      margin-left: -13rem;
+    }
+
+    .nav-item {
+      line-height: 30px;
+      margin-right: 2rem;
+    }
+
+    #spacediv{
+      height: 0px;
+      width: 10rem;
+    }
+
+    .header-card2 img{
+      width: 100%;
+      height: 68%;
+      margin-top: 78px;
+      margin-left: 10px;  
+    }
+
+    /******************************* TESTIMONIES ****************************************/
+  
+  .testimony-main{
+    height: 75vh;
+    width: 100vw;
+  }
+  
+  .testimony-main h2{
+    padding-top: 3rem;
+    width: 560px;
+    font-size: 36px;
+  }
+  
+  .content-position{
+    width: 90vw;
+    display: block;
+    margin: 0 auto ;
+  }
+  
+  .testimony-prop{
+    padding-top: 3rem;
+  }
+  
+  .testimony{
+    display: block;
+    width: 60vw;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .testimony img{
+    display: block;
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+  }
+  
+  .testimony p{
+    width: 278.61px !important;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #7888A4;
+  }
+  
+  .card-body span{
+    font-size: 32px;
+  }
+  .card{
+    width: 370px !important;
+    height: 374px !important;
+    padding-top: 3rem;
+    border-radius: 1rem !important;
+    box-shadow: 6px 6px 12px 4px rgba(29, 17, 100, 0.04) !important;
+  }
+
+  }
+
+  @media screen and (max-width: 1024px) {
+     /******************************* NAVBAR****************************************/
+     .nav-menu {
+      display: flex;
+      list-style: none;
+      text-align: center;
+      margin-right: -14rem;
+    }
+
+    #imageMove{
+      margin-left: -13rem;
+    }
+
+    .nav-item {
+      line-height: 30px;
+      margin-right: 2rem;
+    }
+
+    #spacediv{
+      height: 0px;
+      width: 0rem;
+    }
+
+     /******************************* HEADER****************************************/
+  
+  .header-body{
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 80vh;
+    margin-top: 0.3rem;
+    background-color: #ffffff;
+  }
+  
+  .header-subBody{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+  }
+  
+  .header-card1{
+    width: 48%;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .header-card1 h1{
+    display: block;
+    margin-top: 100px;
+    margin-left: 40px;
+    text-align: start;
+    color: #007bff;
+    font-size: 35px;
+    line-height: 48.51px;
+    font-weight: 700;
+    width: 450px;
+  }
+
+  .header-card1 p{
+    display: block;
+    width: 460px;
+    margin-left: 40px;
+    text-align: start;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28.8px;
+    margin-top: 16px;
+  }
+
+  .header-card1 h4{
+    height: 24px;
+    width: 287px;
+    margin-left: 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: -0.015em;
+  }
+
+  #approval{
+    margin-left: 40px;
+    display: flex;
+  }
+
+  #img1{
+   margin-top: 23px;
+   height: 42px;
+   width: 120px;
+  }
+
+  #img2{
+    margin-top: 8px;
+    margin-left: 40px;
+    height: 50px;
+    width: 37px;
+  }
+  
+  .header-card1 button{
+    position: relative;
+    height: 42px;
+    width: 160px;
+    background-color: #0248CD !important;
+    color: #ffffff;
+    margin-left: 40px;
+    margin-top: 5px;
+  }
+
+  .header-card2{
+    width: 52%;
+    height: 75vh;
+    background-color: #ffffff;
+  }
+  
+  .header-card2 img{
+    width: 531px;
+    height: 270px;
+    margin-top: 78px;
+    margin-left: 10px;  
+  }
+
+   /******************************* ADVANTAGES ****************************************/
+   .main{
+    position: relative;
+    height: 150vh;
+    width: 100vw;
+    z-index: 2;
+    background-color: #0248CD;
+    margin-top: 0;
+  }
+
+  .main h1{
+    font-size: 34px;
+    width: 280px;
+  }
+
+  .illustration{
+    height: 110vh;
+    width: 50%;
+  }
+  
+  .reasons{
+    height: 120vh;
+    width: 50%;
+  }
+  
+  .illustration img{
+    height: 92%;
+    width: 125%;
+    margin-left: -70px;
+    margin-top: 50px;
+  }
+  
+  .reason-card{
+    height: 35vh;
+    width: 48vw;
+  }
+  
+  .reason-card h3{
+    width: 425px;
+    margin-left: 40px;
+    font-size: 25px;
+    line-height: 48px;
+  }
+  
+  .reason-card p{
+    font-size: 13px;
+    width: 40vw;
+    line-height: 27.52px;
+    margin-left: 40px;
+  }
+
+  /******************************* TESTIMONIES ****************************************/
+  
+  .testimony-main{
+    height: 75vh;
+    width: 100vw;
+  }
+  
+  .testimony-main h2{
+    padding-top: 3rem;
+    width: 560px;
+    font-size: 36px;
+  }
+  
+  .content-position{
+    width: 90vw;
+    display: block;
+    margin: 0 auto ;
+  }
+  
+  .testimony-prop{
+    padding-top: 3rem;
+  }
+  
+  .testimony{
+    display: block;
+    width: 60vw;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .testimony img{
+    display: block;
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
+  
+  .testimony p{
+    width: 258.61px !important;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #7888A4;
+  }
+  
+  .card-body span{
+    font-size: 32px;
+  }
+  .card{
+    width: 300px !important;
+    height: 304px !important;
+    padding-top: 3rem;
+    border-radius: 1rem !important;
+    box-shadow: 6px 6px 12px 4px rgba(29, 17, 100, 0.04) !important;
+  }
+
+  /******************************* FOOTER ****************************************/
+  
+  .footer-container{
+    position: relative;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-color: #013FB3;
+  }
+
+  .box3 p{
+    color: #ffffff;
+    font-size: 12px;
+    }
+    
+    .box4 p{
+      width: 30rem;
+      font-size: 12px;
+      margin: auto;
+      margin-top: 50px;
+      }
+
+      .box2 a{
+        font-size: 14px;
+        font-weight: 700;
+        width: 3rem;
+        justify-content: start !important;
+        text-decoration: none !important;
+      }
+
+      .sub-box2 a{
+        font-size: 1.3rem;
+      }
+  }
+
+  @media screen and (max-width: 968px) {
+
+  /******************************* NAVBAR****************************************/
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-top: 2px solid #013FB3;
+      position: absolute;
+      top: 100px;
+      left: -110%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      padding-bottom: 1.5rem;
+    }
+  
+    .nav-menu.active {
+      background: rgba(255, 255, 255, 0.973);
+      left: 0px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+      padding-bottom: 1rem;
+    }
+    .nav-links {
+      padding-top: 1rem;
+      width: 100%;
+      display: table;
+      margin-left: -17rem;
+    }
+  
+    .nav-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #013FB3;
+    }
+
+    #imageMove{
+      margin-left: -18rem;
+    }
+ /******************************* HEADER****************************************/
+    .header-body{
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .header-card1 h1{
+    font-size: 26px;
+    width: 300px;     
+    }
+
+    .header-card1 p{
+      width: 330px;
+      margin-left: 40px;
+      text-align: start;
+      font-size: 10.5px;
+      font-weight: 500;
+      line-height: 22.8px;
+      margin-top: 16px;
+    }
+  
+    .header-card1 h4{
+      height: 24px;
+      width: 287px;
+      margin-left: 40px;
+      margin-top: 30px;
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.015em;
+    }
+  
+    #approval{
+      margin-left: 40px;
+      display: flex;
+    }
+  
+    #img1{
+     margin-top: 23px;
+     height: 32px;
+     width: 90px;
+    }
+  
+    #img2{
+      margin-top: 8px;
+      margin-left: 40px;
+      height: 40px;
+      width: 32px;
+    }
+    
+    .header-card1 button{
+      position: relative;
+      height: 36px;
+      width: 130px;
+      background-color: #0248CD !important;
+      color: #ffffff;
+      margin-left: 40px;
+      margin-top: 5px;
+      font-size: 11px;
+    }
+  
+    .header-card2{
+      width: 52%;
+      height: 75vh;
+      background-color: #ffffff;
+    }
+    
+    .header-card2 img{
+      width: 421px;
+      height: 220px;
+      margin-top: 100px; 
+    }
+
+    /******************************* ADVANTAGES ****************************************/
+   .main{
+    height: 165vh;
+    width: 100vw;
+    z-index: 2;
+  }
+
+  .main h1{
+    font-size: 30px;
+    width: 260px;
+  }
+
+  .illustration{
+    height: 110vh;
+    width: 50%;
+  }
+  
+  .reasons{
+    height: 120vh;
+    width: 50%;
+  }
+  
+  .illustration img{
+    height: 86%;
+    width: 108%;
+    margin-left: -50px;
+    margin-top: 50px;
+  }
+  
+  .reason-card{
+    height: 35vh;
+    width: 48vw;
+  }
+  
+  .reason-card h3{
+    width: 365px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 48px;
+  }
+  
+  .reason-card p{
+    font-size: 11px;
+    width: 40vw;
+    line-height: 27.52px;
+    margin-left: 20px;
+  }
+
+/******************************* TESTIMONIES ****************************************/
+
+.testimony-main{
+  height: 80vh;
+  width: 100vw;
+}
+
+
+.testimony img{
+  display: block;
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-top: -20px;
+}
+
+.testimony p{
+  width: 190.61px !important;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #7888A4;
+}
+
+.card-body span{
+  font-size: 24px;
+}
+
+.card{
+  width: 225px !important;
+  height: 226px !important;
+  padding-top: 3rem;
+  border-radius: 1rem !important;
+  box-shadow: 6px 6px 12px 4px rgba(29, 17, 100, 0.04) !important;
+}
+
+/******************************* FOOTER ****************************************/
+.Pcontainer{
+padding-top: 2rem;
+}
+  
+.footer-container{
+  position: relative;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background-color: #013FB3;
+}
+
+.box3 p{
+  color: #ffffff;
+  font-size: 11px;
+  }
+  
+  .box4 p{
+    width: 23rem;
+    font-size: 11px;
+    margin: auto;
+    margin-top: 85px;
+    }
+
+    .box2 a{
+      font-size: 14px;
+      font-weight: 700;
+      width: 3rem;
+      justify-content: start !important;
+      text-decoration: none !important;
+    }
+
+    .sub-box2 a{
+      font-size: 1.3rem;
+    }
+  }
+/******************************* Responsiveness******************************************800px**/ 
+  @media screen and (max-width: 800px) {
+    .header-body{
+      height: 40vh;
+     }
+
+     .main{
+      position: relative;
+      height: 81vh;
+      width: 100vw;
+      z-index: 2;
+      background-color: #0248CD;
+      margin-top: 0;
+    }
+
+    .illustration{
+      height: 85vh;
+      width: 50%;
+    }
+    
+    .reasons{
+      height: 85vh;
+      width: 50%;
+    }
+    
+    .illustration img{
+      height: 60%;
+      width: 148%;
+      margin-left: -90px;
+      margin-top: 50px;
+    }
+
+    .reason-card{
+      height: 15vh;
+      width: 48vw;
+    }
+
+    .testimony-main{
+      height: 36vh;
+      width: 100vw;
+    }
+
+    .footer-container{
+      height: 58vh;
+      width: 100vw;
+      background-color: #013FB3;
+    }
+
+    .box4 p{
+      width: 23rem;
+      font-size: 12px;
+      margin: auto;
+      margin-top: -125px;
+      }
+
+      .box2{
+        width: 80vw;
+        height: 3.5vh;
+        margin-top: -3rem;
+        border-bottom: 1px solid #ffffff ;
+      }
+  }
+
+  /******************************* Responsiveness******************************************768px**/ 
+   @media screen and (max-width: 768px) {
+    .header-body{
+      height: 87vh;
+     }
+
+     .main{
+      position: relative;
+      height: 150vh;
+      width: 100vw;
+      z-index: 2;
+      background-color: #0248CD;
+      margin-top: 0;
+    }
+
+    .testimony-main{
+      height: 75vh;
+      width: 100vw;
+    }
+
+    .illustration img{
+      height: 110%;
+      width: 128%;
+      margin-left: -70px;
+      margin-top: 50px;
+    }
+
+    .footer-container{
+      height: 96vh;
+      width: 100vw;
+      background-color: #013FB3;
+    }
+
+    .box4 p{
+      width: 23rem;
+      font-size: 12px;
+      margin: auto;
+      margin-top: 30px;
+      }
+
+      .box2{
+        width: 80vw;
+        height: 5vh;
+        margin-top: 2rem;
+        border-bottom: 1px solid #ffffff ;
+      }
+  }
+ 
+  @media screen and (max-width: 640px), (max-height:384), (orientation:landscape) {
+    .header-body{
+      height: 135vh;
+     }
+
+     .main{
+      position: relative;
+      height: 200vh;
+      width: 100vw;
+      z-index: 2;
+      background-color: #0248CD;
+      margin-top: 0;
+    }
+
+    .testimony-main{
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .illustration img{
+      height: 130%;
+      width: 128%;
+      margin-left: -70px;
+      margin-top: 50px;
+    }
+
+    .footer-container{
+      height: 136vh;
+      width: 100vw;
+      background-color: #013FB3;
+    }
+
+    .box4 p{
+      width: 23rem;
+      font-size: 12px;
+      margin: auto;
+      margin-top: 30px;
+      }
+
+      .box2{
+        width: 80vw;
+        height: 5vh;
+        margin-top: 2rem;
+        border-bottom: 1px solid #ffffff ;
+      }
+
+  }
+  @media screen and (max-width: 425px) {
+    /********************** MOBILE ***********************/
+
+/******************************* NAVBAR*******************************/ 
+    #imageMove{
+      margin-left: -9rem;
+    }
+
+    .nav-links {
+      margin-left: -8rem;
+    }
+    
+  /******************************* HEADER*******************************/ 
+
+  .header-body{
+   height: 90vh;
+  }
+
+    .header-card1{
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 90vh;
+      background-color: rgb(0, 0, 0, 0.2);
+      z-index: 2;
+    }
+    
+    .header-card1 h1{
+      display: block;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      color: #007bff;
+      font-size: 28px;
+      line-height: 54.51px;
+      font-weight: 700;
+      width: 350px;
+    }
+    
+    .header-card1 p{
+      display: block;
+      width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 28.8px;
+      margin-top: 16px;
+      color: #ffffff;
+    }
+  
+    .header-card1 h4{
+      height: 24px;
+      width: 208px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 120px;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 29px;
+      letter-spacing: -0.015em;
+    }
+  
+    #approval{
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+    }
+  
+    #img1{
+    margin-top: 18px;
+     height: 26px;
+     width: 67px;
+    }
+  
+    #img2{
+      margin-top: 4px;
+      margin-left: 40px;
+      height: 38px;
+      width: 29px;
+    }
+    
+    .header-card1 button{
+      display: block;
+      position: relative;
+      height: 48px;
+      width: 200px;
+      background-color: #0248CD !important;
+      color: #ffffff;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 24px;
+    }
+    
+    span{
+      font-weight: bold;
+    }
+    
+    .header-card2{
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background-color: #ffffff;
+      filter: blur(5px);
+    }
+    
+    .header-card2 img{
+      width: 599px;
+      height: 380px;
+      margin-top: 98px;
+      margin-left: -9rem;
+    }
+
+    .header-card1 p:hover{
+      color: #ffffff;
+    }
+
+    /******************************* ADVANTAGES ****************************************/
+   .main{
+    position: relative;
+    height: 140vh;
+    width: 100vw;
+    z-index: 2;
+    background-color: #0248CD;
+    margin-top: 0;
+  }
+
+  .main h1{
+    font-size: 32px;
+    width: 270px;
+    z-index: 3;
+  }
+
+  .illustration{
+    height: 110vh;
+    width: 100%;
+  }
+  
+  .reasons{
+    height: 140vh;
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.2);
+    padding-top: 12rem;
+    margin-top: -10rem;
+    padding-bottom: 10rem;
+  }
+  
+  .illustration img{
+    height: 92%;
+    width: 115%;
+    margin-left: -40px;
+    margin-top: 50px;
+    filter: blur(4px);
+  }
+  
+  .reason-card{  
+    height: 35vh;
+    width: 48vw;
+  }
+  
+  .reason-card h3{
+    display: block;
+    width: 400px;
+    margin: auto;
+    font-size: 21px;
+    text-align: center;
+    line-height: 48px;
+    margin-left: 10px;
+  }
+  
+  .reason-card p{
+    display: block;
+    font-size: 12px;
+    width: 370px;
+    text-align: center;
+    line-height: 27.52px;
+    margin: auto;
+    margin-left: 20px;
+  }
+
+  .reason-card p:hover{
+    color: #ffffff;
+  }
+
+  /******************************* TESTIMONIES ****************************************/
+  
+  .testimony-main{
+    position: relative;
+    display: block;
+    height: max-content;
+    width: 100vw;
+    background-color: #ffffff;
+  }
+
+  .testimony-prop{
+   flex-direction: column;
+   justify-content: space-around;
+   height: 140vh;
+  }
+  
+  .testimony-main h2{
+    padding-top: 3rem;
+    width: 400px;
+    display: block;
+    margin: 0 auto ;
+    font-size: 30px;
+    color: #0248CD;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .testimony p{
+    width: 192.61px !important;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+
+  .card-body span{
+    font-size: 20px;
+  }
+  
+  .card{
+    width: 215px !important;
+    height: 226px !important;
+    padding-top: 3rem;
+    border-radius: 1rem !important;
+    box-shadow: 6px 6px 12px 4px rgba(29, 17, 100, 0.04) !important;
+  }
+
+  .content-position{
+    width: 50vw;
+    display: block;
+    margin: 0 auto ;
+    height: max-content;
+    padding-bottom: 1rem;
+  }
+
+  /******************************* FOOTER ****************************************/
+
+  .footer-container{
+    height: 95vh;
+    width: 100vw;
+  }
+  .box2{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  .box2 a{
+    font-size: 10px;
+    font-weight: 700;
+    width: 6rem;
+    justify-content: start !important;
+    text-decoration: none !important;
+  }
+
+  .Pcontainer{
+    padding-top: 1rem;
+
+  }
+
+  .box3 p{
+    font-size: 8px;
+    }
+    
+  .box4 p{
+    width: 18rem;
+    font-size: 9px;
+    margin: auto;
+    margin-top: 25px;
+    }  
+  }
+
+  @media screen and (max-width: 411px) {
+    .header-body{
+      width: 100vw;
+      height: 80vh;
+    }
+
+    .main{
+      height: 130vh;
+      margin-top: 0;
+    }
+
+    .reasons{
+      height: 130vh;
+    }
+
+    .testimony-prop{
+      height: 120vh;
+     }
+
+     .footer-container{
+      height: 85vh;
+    }
+
+    .box4 p{
+      font-size: 10px;
+      margin-top: -45px;
+      }  
+  }
+
+  @media screen and (max-width: 384px) {
+    .header-body{
+      height: 90vh;
+    }
+
+    .reason-card h3{
+      width: 350px;
+      font-size: 21px;
+      line-height: 48px;
+      margin-left: 10px;
+    }
+
+    .reason-card p{
+      font-size: 12px;
+      width: 330px;
+      line-height: 27.52px;
+      margin-left: 20px;
+    }
+
+    .footer-container{
+      height: 85vh;
+    }
+
+    .box4 p{
+      margin-top: 25px;
+      } 
+  }
+
+  @media screen and (max-width: 375px) {
+
+    .header-body{
+      height: 100vh;
+    }
+
+    .header-card1{
+      height: 100vh;
+    }
+
+    #imageMove{
+      margin-left: -8rem;
+    }
+
+    .nav-links {
+      margin-left: -6rem;
+    }
+    
+    /******************************* ADVANTAGES ****************************************/ 
+    .main{
+      height: 140vh;
+      margin-top: 0;
+    }
+
+    .reasons{
+      height: 140vh;
+    }
+    .reason-card h3{
+      width: 350px;
+      font-size: 21px;
+      line-height: 48px;
+      margin-left: 10px;
+    }
+    
+    .reason-card p{
+      font-size: 12px;
+      width: 330px;
+      line-height: 27.52px;
+      margin-left: 20px;
+    }
+
+    /******************************* TESTIMONIES ****************************************/
+
+    .testimony-main{
+      position: relative;
+      display: block;
+      height: max-content;
+      width: 100vw;
+      background-color: #ffffff;
+    }
+
+    .testimony-main h2{
+      padding-top: 3rem;
+      width: 350px;
+      font-size: 28px;
+    }
+
+    .content-position{
+      width: 60vw;
+    }
+
+    .testimony-prop{
+      height: 140vh;
+     }
+
+  /******************************* FOOTER ****************************************/
+  .footer-container{
+    height: 95vh;
+  }
+    .emptydiv{
+      width: 22rem;
+    }
+
+    .sub-box2 a{
+      font-size: 16px;
+      margin-left: 1rem;
+    }
+
+    .box2 a{
+      font-size: 9px;
+      font-weight: 700;
+      width: 4rem;
+    }
+
+    .box4 p{
+      margin-top: 45px;
+      }  
+  }
+
+  @media screen and (max-width: 320px) {
+    .header-body{
+      height: 100vh;
+    }
+
+    
+    .header-card1{
+      height: 100vh;
+    }
+
+    .nav-links {
+      margin-left: -6rem;
+    }
+
+    .header-card1 h1{
+     font-size: 22px;
+     width: 290px;
+    }
+
+    .header-card1 p{
+      font-size: 11px;
+      width: 300px;
+     }
+
+     .reason-card h3{
+      width: 300px;
+      font-size: 17px;
+     }
+
+     .reason-card p{
+      font-size: 9px;
+      width: 280px;
+     }
+
+     .testimony-prop{
+      height: 140vh;
+     }
+
+     .testimony-main h2{
+      padding-top: 3rem;
+      width: 300px;
+      font-size: 23px;
+    }
+
+    
+    .box3 p{
+      font-size: 7px;
+    }
+
+    .box4 p{
+      font-size: 8px;
+      margin-top: 35px;
+    }
+
+    .content-position{
+      width: max-content;
+    }
+
+    .testimony-prop{
+      width: max-content;
+     }
+  }
