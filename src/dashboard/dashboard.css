@@ -7,7 +7,7 @@
     --primary-darkBlue: yellow;
   }
 
-@media screen and (max-width: 1440px) {
+
     /*************** DASHBOARD CONTAINER **************/
     .dashboard{
         display: flex;
@@ -26,13 +26,14 @@
         max-width: 1500px;
         margin-top: 0.3rem;
         box-shadow: 2px 0px 11px 0px #2338620D;
-        background-color: var(--primary-white);
+        background: rgba(255, 255, 255, 0.973);
         padding-bottom: 8rem;
         z-index: 1;
       }
 
       .nav-close{
         margin-top: 1rem;
+        background: rgba(255, 255, 255, 0.973);
       }
 
       .nav-components{
@@ -88,25 +89,24 @@
         #logout p{
           margin-top: 5px; 
           margin-left: 20px;
-          line-height: 45px;
-          font-weight: 700;
           }
 
     /*************** Dashboard Body **************/    
 
-
+/*************** Account Nav **************/ 
 .h-nav {
     display: flex;
     flex-direction: column;
     margin-top: 15rem;
-    margin-left: 4rem;
+    /* margin-left: 0rem; */
+    align-self: center;
 }
-
 .AccountNav{
   display: flex;
   flex-direction: column;
   width: 30vw;
   margin-top: 2rem;
+  align-items: center;
 }
 
  h3{
@@ -172,7 +172,7 @@ margin-left: 4rem;
   position: relative;
   color: #385692;
   width: 18vw;
-  margin-left: 9rem;
+  margin-left: 10.3rem;
   margin-top: 3rem;
   font-size: 24px;
   font-weight: 600;
@@ -224,7 +224,6 @@ margin-left: 4rem;
     border: 1px solid rgba(93, 129, 162, 0.3);
     border-radius: 5px;
     background: #E5E5E5;
-    font-size: 16px;
 }
 
  label{
@@ -243,7 +242,6 @@ margin-left: 4rem;
     border: 1px solid rgba(93, 129, 162, 0.3);
     border-radius: 5px;
     background: #E5E5E5;
-    font-size: 16px;
 }
 
 .contentBody button{
@@ -392,7 +390,6 @@ color: rgba(35, 56, 98, 1);
 font-weight: 400;
 }
 
-
 /*************** bank deatails **************/
 .bankDetails{
   display: block;
@@ -426,7 +423,7 @@ font-weight: 400;
  font-size: 24px;
  font-weight: 600;
  color :rgba(35, 56, 98, 1);
- margin-left: 8.3rem;
+ margin-left: 9.3rem;
  margin-top: 3rem;
 }
 
@@ -434,7 +431,7 @@ font-weight: 400;
   font-size: 15px;
   font-weight: 400;
   color :rgba(35, 56, 98, 1);
-  margin-left: 8.3rem;
+  margin-left: 9.3rem;
   margin-bottom: -1rem;
 }
 
@@ -475,124 +472,7 @@ margin-left: 25rem;
 font-size: 12px;
 font-weight: 400;
 }
-/************************* Card And Bank Nav **************************/
-.CardsAnsBanksContainer{
-  display: flex;
-  flex-direction: column;
-  height: max-content;
-  width: 100%;
-  background: #f8f8f8;
-  padding-bottom: 7rem;
-}
-.Cardandbanks{
- display: flex;
- height: 5rem;
- width: 100%;
- flex-direction: column;
-}
 
-.Cardandbanks h2{
-display: block;
-width: 18rem;
-margin-top: 4rem;
-margin-left: 4rem;
-font-size: 32px;
-font-weight: 600;
-color: rgba(35, 56, 98, 1);
-}
-
-.CardandbanksNav{
-  display: flex;
-  width: 85%;
-  height: 4rem;
-  margin-left: 4.4rem;
-  border-bottom: 1px solid  rgba(170, 198, 206, 1);
-  ;
-}
-
-.CardandbanksNav a{
-display: block;
-width: 5rem;
-line-height: 21px;
-font-size: 14px;
-font-weight: 600;
-margin-left: 0rem;
-margin-top: 2.3rem;
-padding-bottom: 4px;
-text-decoration: none;
-}
-
-.CardandbanksNav a:hover{
-border-bottom: 3px solid var(--primary-blue);
-}
-
-.CardandbanksNav a:focus{
-  border-bottom: 3px solid rgba(2, 72, 205, 1);
-  color: rgba(2, 72, 205, 1);
-  }
-
-  .cardContainer{
-    display: flex;
-    flex-direction: column;
-    margin-top: 7rem;
-    height: 60vh;
-    width: 100%;
-
-  }
-
-  .cardContainer h4{
-  display: flex;
-  font-size: 18px;
-  font-weight: 700;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  color: rgba(2, 72, 205, 1);
-  }
-
-  #noCard{
-    display: block;
-    position: relative;
-    width: 341px;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    text-align: center;
-    margin: 1rem auto 0 auto;
-    color: rgba(170, 198, 206, 1);
-  }
-
-  .cardContainer button{
-    display: block;
-    width: 226px;
-    height: 65px;
-    margin: 1rem auto 0 auto;
-    background: rgba(2, 72, 205, 1);
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 21px;
-    color: #ffffff;
-    border-radius: 4px;
-    border: none;
-  }
-
-  .cardContainer img{
-    display: block;
-    margin: auto;
-    margin-top: 3rem;
-    width: 34%;
-    height: 58%;
-  }
-
-  #CardImg{
-    display: block;
-    margin: auto;
-    margin-top: 3rem;
-    width: 45%;
-    height: 58%;
-  }
-
-}
 
 @media screen and (max-width:1024px){
 
@@ -786,14 +666,55 @@ select{
   
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 968px){
+
+}
+
+@media screen and (max-width: 414px){
+
+  .dashboard-nav{
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 270px;
+    /* max-width: 1500px; */
+    margin-top: 0.3rem;
+    box-shadow: 2px 0px 11px 0px #2338620D;
+    background: rgba(255, 255, 255, 0.973);
+    padding-bottom: 8rem;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-components.active {
+    display: block;
+    left: -35rem;
+    opacity: 1;
+    transition: all 0.8s ease;
+    z-index: 1;
+    padding-bottom: 1rem;
+    width: 0;
+  }
+
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    margin-top: 0rem;
+    margin-left: 10.5rem;
+    transform: translate(-100%, 60%);
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: #013FB3;
+    z-index: 9;
+  }
 
   .AccountNav{
     display: flex;
     flex-direction: column;
     width: 90vw;
     margin-top: 1rem;
-    margin-left: 4rem;
+    margin-left: 0rem;
   }
 
   .AccountCompo{
@@ -809,14 +730,16 @@ select{
     display: block;
     height: max-content;
     width: 90%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 4rem;
     }
 
     .contentBody{
-      width: 95%;
+      width: 100%;
       margin-top: 3rem;
-      margin-left: -2rem;
+      margin-left: auto;
+      margin-right: auto;
       color: #385692;
       padding-bottom: 4rem;
   }
@@ -826,43 +749,311 @@ select{
 }
 
 h3{
-  margin-left: 2.5rem;
+  margin-left: 7rem;
 }
 
 .InvestmentDetails h2{
-  margin-left: 10rem;
+  align-items: center;
   margin-top: 3rem;
+  width: max-content;
   }
 
  .InvestmentDetails span{
     display: block;
-    width: 25rem;
-    margin-left: 3rem;
+    width: 20.5rem;
+    margin-left: 2rem;
     }
 
+    input{
+      width: 320px;
+      height: 40px;
+      margin: 1rem 0;
+      margin-left: 1.6rem;
+      margin-right: auto;
+    }
+    
+    label{
+      text-align: start;
+      color: #233862;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0px;
+      margin-left: 2rem;
+    }
+    
+    select{
+      width: 320px;
+      height: 40px;
+      margin: 1rem 0;
+      margin-left: 1.6rem;
+      margin-right: auto;
+    }
+
+    .profileImage img{
+      height: 94px;
+      width: 94px;
+      margin-left: 0rem;
+      margin-bottom: 2rem;
+    }
+
+    #BackButton1{
+      margin-left: 10rem;
+      }
+      
+    #BackButton2{
+        margin-left: 10rem;
+        }
+
   #header{
-    margin-left: 3rem;
+    margin-left: 2rem;
     width: 30rem;
   }
 
   .cardContent{
-    margin-left: 3rem;
+    margin-left: 2rem;
+    margin-right: auto;
   }
 
   .cardHolder h2{
-    margin-left: 3rem;
+    margin-left: 0rem;
+    width: 21rem;
+    text-align: center;
    }
    
    .cardHolder p{ 
      font-size: 14px;
-     margin-left: 3rem;
+     margin-left: 2rem;
+     width: 20rem;
      margin-bottom: -1rem;
+     text-align: start;
    }
 
-   #PS{
-    width: max-content;
-    margin-left: 3rem;
+   .dashboard{
+    overflow: hidden;
+  }
+
+  #label1{
+    margin-left: 14rem;
+  }
+
+  #label3{
+    margin-left: 14rem;
+  } 
+
+
+}
+
+@media screen and (max-width: 384px){
+  input{
+    width: 320px;
+    height: 40px;
+    margin: 1rem 0;
+    margin-left: 0.8rem;
+    margin-right: auto;
+  }
+  
+  label{
+    text-align: start;
+    margin: 0px;
+    margin-left: 1rem;
+  }
+  
+  select{
+    margin: 1rem 0;
+    margin-left: 0.8rem;
+    margin-right: auto;
+  }
+
+  #header{
+    margin-left: 1rem;
+    width: 30rem;
+  }
+
+  .InvestmentDetails span{
+    width: 20.5rem;
+    margin-left: 1rem;
     }
+
+  .cardContent{
+    margin-left: 0.8rem;
+    margin-right: auto;
+  }
+
+  .cardHolder h2{
+    margin-left: 1rem;
+    width: 17rem;
+   }
+   
+   .cardHolder p{ 
+     font-size: 14px;
+     margin-left: 1rem;
+     width: 20rem;
+     margin-bottom: -1rem;
+   }
+}
+
+@media screen and (max-width: 360px){
+
+  .dashboard-nav{
+    background-color: var(--primary-white);
+    padding-bottom: 8rem;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-components.active {
+    display: block;
+    background: rgba(255, 255, 255, 0.973);
+    right: 35rem;
+    opacity: 1;
+    transition: all 0.8s ease;
+    z-index: 1;
+    padding-bottom: 1rem;
+    width: 0;
+  }
+
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    margin-top: 0rem;
+    margin-left: 10.5rem;
+    transform: translate(-100%, 60%);
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: #013FB3;
+    z-index: 9;
+  }
+
+  .AccountNav{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-top: 1rem;
+    margin-left: 0rem;
+  }
+
+  .AccountCompo{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-bottom: 8rem;
+    height: max-content;
+    background-color: #eeeded;
+  }
+
+  .InvestmentDetails{
+    display: block;
+    height: max-content;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    }
+
+    .contentBody{
+      width: 100%;
+      margin-top: 3rem;
+      margin-left: auto;
+      margin-right: auto;
+      color: #385692;
+      padding-bottom: 4rem;
+  }
+  
+.h-nav {
+    margin-top: 10rem;
+}
+
+h3{
+  margin-left: 7rem;
+}
+
+.InvestmentDetails h2{
+  align-items: center;
+  margin-top: 3rem;
+  width: max-content;
+  }
+
+ .InvestmentDetails span{
+    display: block;
+    width: 20.5rem;
+    margin-left: 0rem;
+    }
+
+    input{
+      width: 320px;
+      height: 40px;
+      margin: 1rem 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    label{
+      text-align: start;
+      color: #233862;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0px;
+    }
+    
+    select{
+      width: 320px;
+      height: 40px;
+      margin: 1rem 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .profileImage img{
+      height: 94px;
+      width: 94px;
+      margin-left: 0rem;
+      margin-bottom: 2rem;
+    }
+
+    #BackButton1{
+      margin-left: 10rem;
+      }
+      
+    #BackButton2{
+        margin-left: 10rem;
+        }
+
+  #header{
+    margin-left: 0rem;
+    width: 30rem;
+  }
+
+  .cardContent{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cardHolder h2{
+    margin-left: 0rem;
+    width: 21rem;
+    text-align: center;
+   }
+   
+   .cardHolder p{ 
+     font-size: 14px;
+     margin-left: auto;
+     width: 20rem;
+     margin-bottom: -1rem;
+     text-align: start;
+   }
+
+   .dashboard{
+    overflow: hidden;
+  }
+
+  #label1{
+    margin-left: 14rem;
+  }
+
+  #label3{
+    margin-left: 14rem;
+  } 
 }
 
 @media screen and (max-width: 425px){

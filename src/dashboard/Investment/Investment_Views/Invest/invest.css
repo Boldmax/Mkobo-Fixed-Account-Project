@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding-bottom: 4rem;
+}
+
+.CardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ hr {
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin-top: 6rem;
+    color: #ffffff;
+}
+
+#labela{
+    position: absolute;
+    display: block;
+    width: 14rem;
+    color: #ffffff;
+    margin-top: 2.5rem;
+    margin-left: 13.5rem;
+    font-size: 0.9rem;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  #labelb{
+  position: absolute;
+  display: block;
+  width: 14rem;
+  color: #ffffff;
+  margin-top: 6.5rem;
+  margin-left: 2rem;
+  font-size: 11px;
+  font-weight: 400;
+  }
+  
+  #labelc{
+  position: absolute;
+  display: block;
+  width: 14rem;
+  color: #ffffff;
+  margin-top: 10rem;
+  margin-left: 2rem;
+  font-size: 11px;
+  font-weight: 400;
+  }

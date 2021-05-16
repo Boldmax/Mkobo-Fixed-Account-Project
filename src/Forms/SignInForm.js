@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import content from "./signIndata";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './form.css';
 import { Link, useHistory } from "react-router-dom";
 import illustration from "./Group.png"
@@ -9,15 +8,23 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import axios from 'axios';
+import { GlobalState } from '../GlobalState'
+//import Proptypes from 'prop-types';
+//import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
+
 
 const schema = Yup.object().shape({
-    emailAddress: Yup.string().required("Enter a valid Email Address").email(),
+    EmailAddress: Yup.string().required("Enter a valid Email Address").email(),
     Password: Yup.string().required("Password is required"),
 })
 
 
+
 export default function SignInForm() {
-    //const [token, setToken] = useState(false);
+     const {token, setToken} = useContext(GlobalState);
+
+    /*   axios.defaults.headers.common['Authorization'] = tokenate;
+      console.log(tokenate) */
 
     let history = useHistory();
     const { register, handleSubmit, errors } = useForm({
@@ -25,22 +32,22 @@ export default function SignInForm() {
     });
     // authentication
     const onSubmit = (data) => {
-        console.log(data);
-        axios.post('http://localhost:4000/app/signin', data)
-        .then(res => console.log(res))
-        history.push('/dashboard')
-
-        /* useEffect(() => {
-            axios.post('link', data)
-                .then(res => {
-                    localStorage.setItem('token', res.token)
-                })
-                .catch(err => {
-                    console.log(err)
-                })
-        }, []) */
+        axios.post('http://localhost:4000/form/login', data)
+            .then(res => {
+                const token = res.data.accessToken
+                localStorage.setItem('JWT', token);
+                             
+               // setToken(getFromLS())
+                // console.log(getFromLS())
+                if (token) {
+                    history.push('/dashboard')
+                    /*  {
+                         pathname: '/dashboard/'+ mail +'',
+                         state: { token: `${res.data.accessToken}` }
+                     } */
+                }
+            })
     }
-
 
     return (
         <div className="signIn-container">
@@ -70,10 +77,14 @@ export default function SignInForm() {
                         <a href="#">Forgot password?</a>
                         <button type="submit" className="btn btn-outline-none" value="submit">Log in</button>
                         <p>Don't have an account? <Link to="signupform"><a>Create an account</a></Link></p>
-                        
-                    </form>                 
+
+                    </form>
                 </div>
-            </div>         
+            </div>
         </div>
     )
 }
+
+/* SignInForm.proptype = {
+    setToken: Proptypes.func.isRequired
+}; */

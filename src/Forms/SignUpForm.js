@@ -56,9 +56,9 @@ export default function SignUpForm() {
                             return (
                                 <div className="fContent" key={key}>
                                     <>
-                                        <label for={input.label} id="label">{input.label}</label>
+                                        <label for={input.label} id="labe">{input.label}</label>
                                         <input
-                                            id="sUpform"
+                                            id="sUpfor"
                                             type={input.type}
                                             name={input.name}
                                             ref={register}

@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.investClass{
+    width: 80vw;
+}
+
+#divider{
+margin-left: 6rem;
+margin-top: -2%;
+border-top: 3px solid #AAC6CE;
+width: 70%;
+}
+
+#divider2{
+    margin-left: 6rem;
+    margin-top: 0.8%;
+    border-top: 3px solid #AAC6CE;
+    width: 70%;
+    }
+
+.header{
+    margin-bottom: 4rem;
+}
+
+.invest-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.linkstyle{
+color: #AAC6CE;
+font-size: 14px;
+font-weight: 600;
+width: 10rem;
+}
+
+.linkstyle:hover {
+    color: #0248CD ;
+    border-bottom: 3px solid #0248CD ;
+}
+
+.linkstyle:focus {
+    color: #0248CD ;
+    border-bottom: 3px solid #0248CD ;
+}

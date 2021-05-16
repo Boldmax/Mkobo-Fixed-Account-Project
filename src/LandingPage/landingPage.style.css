@@ -23,7 +23,7 @@
     background: #555;
   }
 
-  @media screen and (max-width: 1920px), screen and (max-height: 1080px)  {
+
 /******************************* NAVBAR***********************************************2560px*/
 
     .navbar {
@@ -96,7 +96,7 @@
     position: relative;
     display: block;
     width: 100vw;
-    height: 65vh !important;
+    height: 65vh;
     margin-top: 0.3rem;
     background-color: #ffffff;
   }
@@ -476,7 +476,6 @@
         color: #ffffff;
       }
 
-  }
 /***************************************************************                   ***1680****/
 @media screen and (max-width: 1680px) {
   .nav-menu {
@@ -605,7 +604,7 @@
 
   }
 
-  @media screen and (max-width: 1440px), screen and (max-height:900px) {
+  @media screen and (max-width: 1440px) {
     
     /******************************* NAVBAR************************************************1440px*/
 

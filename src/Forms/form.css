@@ -12,7 +12,7 @@
     overflow: hidden;
   }
 
-  @media screen and (max-width: 1440px){
+
 /******************************* LOG IN FORM ****************************************/
 .signIn-container{
     position: relative;
@@ -216,7 +216,6 @@
           margin-left: 160px;
         }
     
-        }
 
   @media screen and (max-width:1024px) {
 
@@ -307,7 +306,7 @@
     font-weight: 700;
   }
 
-  #sUpform{
+  #form{
     width: 349px;
     height: 46px;
     margin-left: -50px;
@@ -446,7 +445,7 @@
   font-weight: 700;
 }
 
-#sUpform{
+#form{
   width: 230px;
   height: 36px;
   margin-left: -180px;
@@ -557,7 +556,7 @@
     background: rgba(0, 0, 0, 0.1);
   }
 
-  #sUpbutton{
+  #button{
     font-Size: 14px;
     Width: 230px;
     Height: 36px;
@@ -572,11 +571,11 @@
 
 @media screen and (max-width:375px){
 
-  #sUpform{
+  #form{
     margin-left: -210px;
    }
 
-   #sUpbutton{
+   #button{
     margin-left: 78px;
   }
 
@@ -623,11 +622,11 @@
 
 
 /******************************* SIGN-UP FORM ****************************************/
-  #sUpform{
+  #form{
     margin-left: -250px;
    }
 
-   #sUpbutton{
+   #button{
     margin-left: 45px;
   }
 

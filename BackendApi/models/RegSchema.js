@@ -19,4 +19,4 @@ const signupSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('newtable', signupSchema);
+module.exports = mongoose.model('users', signupSchema);

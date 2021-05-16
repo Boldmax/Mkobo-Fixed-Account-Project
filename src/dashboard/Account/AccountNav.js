@@ -1,9 +1,17 @@
-import React from 'react';
-import { ButtonBar } from "./AccountNav.styled";
-import { Link } from "react-router-dom";
+import React, { useContext } from 'react';
+import { ButtonBar, Logout } from "./AccountNav.styled";
+import { Link, Redirect } from "react-router-dom";
+import { GlobalState } from '../../GlobalState';
 
 
 export default function AccountNav() {
+    const { setToken } = useContext(GlobalState)
+
+    const LogOut = () => {
+        setToken(null);
+        return <Redirect to='/' />
+    }
+
     return (
         <div className="AccountNav">
             <h3>Accounts</h3>
@@ -27,10 +35,10 @@ export default function AccountNav() {
 
             </div>
             <div id="logout">
-                <ButtonBar>
-                    <Link to="/dashboard/Bankdetails" style={{ color: 'rgba(203, 63, 63, 1)', padding: '0', margin: '0', textDecoration: 'none', fontSize: '16px', marginTop: '1.5rem' }}>
-                        <p>Sign Out </p> </Link>
-                </ButtonBar>
+                <Logout >
+                    <a style={{ color: 'rgba(203, 63, 63, 1)', padding: '0', margin: '0', textDecoration: 'none', fontSize: '16px', marginTop: '1.5rem' }}>
+                        <p>Sign Out </p> </a>
+                </Logout>
             </div>
         </div>
     )

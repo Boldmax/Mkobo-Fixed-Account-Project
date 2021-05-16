@@ -43,7 +43,7 @@ export default function ActiveInvestments() {
         <div className="displayControl">
             <div className="cardHolder">
             <h2>View Active Investment</h2>
-            <p>Here’s a list of all the investment you’ve made with us.</p>
+            <p>Here’s a list of all the investment you’ve made with us recently.</p>
                 <div className="cardContent">
                     {states.options.map((state, key) => {
                         return <Cards key={key}>

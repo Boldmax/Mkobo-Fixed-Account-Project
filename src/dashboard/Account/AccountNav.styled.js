@@ -1,7 +1,23 @@
 import styled from 'styled-components';
+import image from './Vector.png'
 
 
 export const ButtonBar = styled.div`
+position: relative;
+display: block;
+background-color: #ffffff;
+height: 72px;
+width: 323px;
+border: 1px solid #AAC6CE;
+border-radius: 5px;
+
+@media (max-width: 1024px) {
+    width: 303px;
+    height: 60px;
+}
+`
+
+export const Logout = styled.div`
 position: relative;
 display: block;
 background-color: #ffffff;
@@ -33,6 +49,19 @@ margin: 1rem 0;
     font-size: 1rem;
     margin-left: 5rem;
 }
+
+@media (max-width: 968px) {
+    width: 320px;
+    height: 46px;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+&&::placeholder{
+color: #233862;
+font-size: 1rem;
+padding-left: 1rem;
+}
 `
 
 export const BackButton = styled.button`
@@ -48,6 +77,11 @@ background-color: #0248CD;
 margin:2rem 2rem 2rem 8rem;
 
 @media (max-width: 1024px) {
+    width: 140px;
+    height: 42px;
+}
+
+@media (max-width: 968px) {
     width: 140px;
     height: 42px;
 }
@@ -69,11 +103,18 @@ export const Cards = styled.div`
  margin: auto;
  margin-top: 1rem;
  box-shadow: 0px 4px 9px 0px rgba(170, 198, 206, 0.24);
+ background-image: url(${image});
 
  @media (max-width: 1024px) {
     width: 420px;
     height: 172px;
 }
+
+@media (max-width: 968px) {
+    width: 340px;
+    height: 172px;
+}
+
 `
 
 export const Title = styled.h3`
@@ -89,6 +130,12 @@ margin-top: 1rem;
 @media (max-width: 1024px) {
     margin-left: 1rem;
     font-size: 19px;
+    font-weight: 600;
+}
+
+@media (max-width: 968px) {
+    margin-left: 1rem;
+    font-size: 16px;
     font-weight: 600;
 }
 `
@@ -109,6 +156,12 @@ font-size: 1rem;
     font-size: 12px;
     font-weight: 600;
 }
+
+@media (max-width: 968px) {
+    margin-left: 1rem;
+    font-size: 10px;
+    font-weight: 600;
+}
 `
 
 export const Head2 = styled.h5`
@@ -116,12 +169,18 @@ position: absolute;
 display: block;
 width: 14rem;
 color: #ffffff;
-margin-top: 3rem;
+margin-top: 3.8rem;
 margin-left: 25rem;
 font-size: 0.9rem;
 
 @media (max-width: 1024px) {
     margin-left: 20rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+@media (max-width: 968px) {
+    margin-left: 14rem;
     font-size: 0.85rem;
     font-weight: 600;
 }
@@ -141,6 +200,12 @@ font-size: 0.9rem;
     font-size: 0.85rem;
     font-weight: 600;
 }
+
+@media (max-width: 968px) {
+    margin-left: 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
 `
 export const Head4 = styled.h5`
 position: absolute;
@@ -153,6 +218,12 @@ font-size: 0.9rem;
 
 @media (max-width: 1024px) {
     margin-left: 20rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+@media (max-width: 968px) {
+    margin-left: 14rem;
     font-size: 0.85rem;
     font-weight: 600;
 }

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 
 export default function HorizontalNav() {
+
     return (
         <div>
             <nav style={{ backgroundColor: "#fff" }} className="navbar navbar-expand-lg navbar-primary">
@@ -17,7 +18,7 @@ export default function HorizontalNav() {
                         <span className="bi bi-Linkst text-primary" style={{ fontSize: "2.9rem" }}></span>
                     </button>
                     <div className="collapse navbar-collapse" >
-                        
+
                     </div>
                 </div>
             </nav>
