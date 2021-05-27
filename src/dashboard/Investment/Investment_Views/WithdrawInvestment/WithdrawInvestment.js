@@ -1,49 +1,19 @@
 import React from 'react';
-import { ViewInvestCard, Title, Head1, Head2, Head3, Head4, Rate, BackButton } from './withdrawInvestment.style';
+import { ViewInvestCard, Title, Head1, Head2, Head3, Head4, Rate, Dates, Select, Filter } from './withdrawInvestment.style';
 import './withdrawInvestment.css';
+import states from '../resources';
 
-
-const states = {
-    options: [
-        {
-            Name: "HYPA Deposit",
-            InterestRate: "16.25%",
-            MaturityDate: "12-Nov-2021",
-            InvestedCapital: "1000000",
-            Interest: "16,250.00",
-            Key: 0
-        },
-        {
-            Name: "HYPA Deposit",
-            InterestRate: "16.25%",
-            MaturityDate: "12-Nov-2021",
-            InvestedCapital: "1000000",
-            Interest: "16,250.00",
-            Key: 1
-        },
-        {
-            Name: "HYPA Deposit",
-            InterestRate: "16.25%",
-            MaturityDate: "12-Nov-2021",
-            InvestedCapital: "1000000",
-            Interest: "16,250.00",
-            Key: 2
-        },
-        {
-            Name: "HYPA Deposit",
-            InterestRate: "16.25%",
-            MaturityDate: "12-Nov-2021",
-            InvestedCapital: "1000000",
-            Interest: "16,250.00",
-            Key: 3
-        },
-    ]
-}
 
 export default function ViewInvestment() {
     return (
         <div className='container'>
-            <div></div>
+            <div className='filter'>
+                <Filter><i className='bi bi-funnel' />Filter by</Filter>
+                <Select>
+                    <option>Tenure</option>
+                    <option>Rate</option>
+                </Select>
+            </div>
             <div className='CardContainer'>
                 {states.options.map((state, key) => {
                     return <ViewInvestCard key={key}>
@@ -52,14 +22,12 @@ export default function ViewInvestment() {
                         <label id='label4'>Matures on</label>
                         <Head2>{state.MaturityDate}</Head2>
                         <label id='label5'>Invested Capital</label>
-                        <Head3>{state.InvestedCapital}</Head3>
+                        <Head3>&#8358;{state.InvestedCapital}</Head3>
                         <label id='label6'>Interest</label>
-                        <Head4>{state.Interest}</Head4>
-                        <BackButton>Withdraw</BackButton>
+                        <Head4>&#8358;{state.Interest}</Head4>
+                        <Dates>Withdrawn on {state.Liquidate}</Dates>
                     </ViewInvestCard>
                 })}
-
-
             </div>
         </div>
     )

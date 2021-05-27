@@ -9,7 +9,7 @@ let nextOfKinController = {
             .populate("nextofkin")
             .exec()
             .then(user => {
-                console.log(user.nextOfKin.relationship)
+              // console.log(user.nextOfKin.relationship)
                 return res.json(user.nextOfKin);
             })
             .catch( err => console.log(err))
@@ -28,7 +28,7 @@ let nextOfKinController = {
         return newUser
         .save()
         .then(kin => {
-            console.log(kin)
+           // console.log(kin)
             return UserModel.findByIdAndUpdate(
                 userId, { $addToSet: { nextOfKin: kin } }
             );

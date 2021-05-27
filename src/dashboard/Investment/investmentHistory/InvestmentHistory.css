@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.history_body hr{
+    margin-left: 2rem;
+    border-top: 3px solid #AAC6CE;
+    width: 94%;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.history_body {
+    height: 65vh;
+    z-index: 5;
+}
+
+.history_lines{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:414px){
+    .history_body hr{
+        width: 100%;
+        margin-top: 2rem;
+        margin-left: 0%;
+    }
+}

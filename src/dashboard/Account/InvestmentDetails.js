@@ -36,9 +36,9 @@ export default function InvestmentDetails() {
         resolver: yupResolver(schema),
     });
     const getFromLS = () => {
-        return  localStorage.getItem('JWT')
-       }; 
-       console.log(getFromLS())
+        return localStorage.getItem('JWT')
+    };
+
     const handleDisplay = () => {
         axios.get('http://localhost:4000/app/user/', {
             headers: {
@@ -46,7 +46,6 @@ export default function InvestmentDetails() {
             }
         })
             .then(resp => {
-                console.log(gender)
                 setBvn(resp.data[0].BVN);
                 setFirstName(resp.data[0].fisrt_name);
                 setLastName(resp.data[0].last_name);
@@ -54,7 +53,8 @@ export default function InvestmentDetails() {
                 setDate(resp.data[0].date_of_birth);
                 setAddress(resp.data[0].address)
                 setGender(resp.data[0].gender)
-            });
+            })
+            .catch(err => console.log(err));
     }
 
     useEffect(() => {

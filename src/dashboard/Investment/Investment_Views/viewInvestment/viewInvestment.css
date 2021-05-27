@@ -5,46 +5,101 @@
 
 .container{
     padding-bottom: 4rem;
+    z-index: 1;
 }
 
-.CardContainer{
+.CardHold{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-#label4{
+.filter i{
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    }
+
+#label41{
     position: absolute;
     display: block;
     width: 14rem;
     color: #233862;
-    margin-top: 1.5rem;
-    margin-left: 25rem;
+    margin-top: 2.8rem;
+    margin-left: 22.2rem;
     font-size: 0.9rem;
     font-size: 12px;
     font-weight: 400;
   }
   
-  #label5{
+  #label51{
   position: absolute;
   display: block;
   width: 14rem;
   color: #233862;
-  margin-top: 7rem;
+  margin-top: 6.5rem;
   margin-left: 2rem;
   font-size: 12px;
   font-weight: 400;
   }
   
-  #label6{
+  #label61{
   position: absolute;
   display: block;
   width: 14rem;
   color: #233862;
-  margin-top: 7rem;
-  margin-left: 25rem;
+  margin-top: 6.5rem;
+  margin-left: 24.4rem;
   font-size: 12px;
   font-weight: 400;
   }
 
+@media screen and (max-width:1280px) {
+#label41{
+    margin-top: 2rem;
+    margin-left: 18rem;
+    }
+
+#label61{
+    margin-top: 7.1rem;
+    margin-left: 20rem;
+    }  
+}
+
+  @media screen and (max-width:414px) {
+#label61{
+    margin-top: 7.1rem;
+    margin-left: 14.4rem;
+    }
+
+#label51{
+    margin-top: 7rem;
+    margin-left: 1rem;
+    }
+
+#label41{
+    margin-top: 2rem;
+    margin-left: 12.4rem;
+
+    }
+
+  }
+
+  @media screen and (max-width:360px) {
+
+    #label41{
+        margin-top: 2rem;
+        margin-left: 13rem;
+        font-size: 12px;
+      }
+
+    #label51{
+        margin-top: 6.5rem;
+        margin-left: 1rem;
+        }
+
+    #label61{
+        margin-top: 6.5rem;
+        margin-left: 15rem;
+        }
+  }
   

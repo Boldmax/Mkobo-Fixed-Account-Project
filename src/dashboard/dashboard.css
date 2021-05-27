@@ -32,7 +32,7 @@
       }
 
       .nav-close{
-        margin-top: 1rem;
+        margin-top: 0.3rem;
         background: rgba(255, 255, 255, 0.973);
       }
 
@@ -147,7 +147,7 @@
 display: block;
 position: relative;
 margin-top: 6rem;
-margin-left: 4rem;
+margin-left: 0rem;
 }
 
 #logout p{
@@ -489,7 +489,7 @@ font-weight: 400;
       }
 
       .nav-close{
-        margin-top: 1rem;
+        margin-top: 0.3rem;
       }
 
       .nav-components{
@@ -670,6 +670,52 @@ select{
 
 }
 
+@media screen and (max-width: 800px){
+  .dashboard-nav{
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 270px;
+    margin-top: 0.3rem;
+    box-shadow: 2px 0px 11px 0px #2338620D;
+    background: rgba(255, 255, 255, 0.973);
+    padding-bottom: 8rem;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+  }
+
+  .nav-components.active {
+    display: block;
+    background: rgba(255, 255, 255, 0.973);
+    right: 35rem;
+    opacity: 1;
+    transition: all 0.8s ease;
+    z-index: 1;
+    padding-bottom: 1rem;
+    width: 0;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    margin-top: 0rem;
+    margin-left: 10.5rem;
+    transform: translate(-100%, 60%);
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: #013FB3;
+    z-index: 9;
+  }
+
+  .AccountNav{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-top: 1rem;
+    margin-left: 0rem;
+  }
+}
+
 @media screen and (max-width: 414px){
 
   .dashboard-nav{
@@ -677,18 +723,18 @@ select{
     position: absolute;
     height: 100vh;
     width: 270px;
-    /* max-width: 1500px; */
     margin-top: 0.3rem;
     box-shadow: 2px 0px 11px 0px #2338620D;
     background: rgba(255, 255, 255, 0.973);
     padding-bottom: 8rem;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in;
     z-index: 1;
   }
 
   .nav-components.active {
     display: block;
-    left: -35rem;
+    background: rgba(255, 255, 255, 0.973);
+    right: 35rem;
     opacity: 1;
     transition: all 0.8s ease;
     z-index: 1;

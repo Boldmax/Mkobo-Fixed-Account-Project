@@ -33,6 +33,22 @@ margin: 1rem 0;
     font-size: 1rem;
     margin-left: 5rem;
 }
+
+@media (max-width: 414px) {
+    width: 320px;
+    height: 46px;
+    font-size: 1rem;
+    margin-left: 2rem;
+}
+
+@media (max-width: 384px) {
+    width: 320px;
+    margin-left: 1rem;
+}
+
+@media (max-width: 360px) {
+    margin-left: 0rem;
+}
 `
 
 export const BackButton = styled.button`
@@ -45,11 +61,16 @@ font-weight: 600;
 border-radius: 5px;
 color: #ffffff;
 background-color: #0248CD;
+background-color: yellow;
 margin:2rem 2rem 2rem 8rem;
 
 @media (max-width: 1024px) {
     width: 140px;
     height: 42px;
+}
+
+@media (max-width: 414px) {
+    margin:2rem auto 2rem 15rem;
 }
 
 &:hover{
@@ -60,7 +81,7 @@ margin:2rem 2rem 2rem 8rem;
 }
 `
 
-export const Cards = styled.div`
+/* export const Cards = styled.div`
  position: relative;
  display: block;
  height: 192px;
@@ -74,9 +95,9 @@ export const Cards = styled.div`
     width: 420px;
     height: 172px;
 }
-`
+` */
 
-export const Title = styled.h3`
+/* export const Title = styled.h3`
 position: absolute;
 display: block;
 width: 10rem;
@@ -156,4 +177,4 @@ font-size: 0.9rem;
     font-size: 0.85rem;
     font-weight: 600;
 }
-`
+` */

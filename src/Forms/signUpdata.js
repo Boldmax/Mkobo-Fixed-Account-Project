@@ -16,8 +16,8 @@ const content = {
             type: "Password",
         },
         {
-            label: "Confirm Password",
-            name: "PasswordConfirm",
+            label: "Password2",
+            name: "Password2",
             type: "Password",
         },
         

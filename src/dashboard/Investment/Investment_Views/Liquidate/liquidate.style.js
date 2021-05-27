@@ -12,7 +12,7 @@ box-shadow: 0px 4px 9px 0px rgba(170, 198, 206, 0.24);
 border-radius: 10px;
 margin-left: auto;
 margin-right: auto;
-
+z-index: 1;
 
 @media (max-width: 1280px) {
 width: 420px;
@@ -22,11 +22,17 @@ height: 250px;
 @media (max-width: 1024px) {
    width: 420px;
    height: 172px;
-}
+};
 
 @media (max-width: 414px) {
-   width: 420px;
-   height: 250px;
+    width: 580px;
+    height: 240px;
+/*     background-color: black; */
+};
+
+@media (max-width: 360px) {
+height: 240px;
+width: 540px;
 }
 `
 
@@ -106,11 +112,11 @@ font-weight: 600;
 
 @media (max-width: 414px) {
     margin-left: 17rem;
-}
+};
 
 @media (max-width: 384px) {
     margin-left: 15.5rem;
-}
+};
 `
 
 export const Head3 = styled.h5`
@@ -163,12 +169,12 @@ font-weight: 600;
 }
 
 @media (max-width: 414px) {
-    margin-left: 17.9rem;
-}
+    margin-left: 18rem;
+};
 
 @media (max-width: 384px) {
     margin-left: 16.5rem;
-}
+};
 `
 
 export const Rate = styled.span`
@@ -182,23 +188,6 @@ font-size: 1rem;
 @media (max-width: 968px) {
     font-size: 10px;
     font-weight: 600;
-}
-`
-export const BackButton = styled.button`
-display: block;
-position: relative;
-width: 154px;
-height: 48px;
-font-size: 14px;
-font-weight: 600;
-border-radius: 5px;
-color: #ffffff;
-background: ${(props) => props.liquidate ? "red" : "#0248CD"} ; 
-margin:11rem 2rem 2rem 12rem;
-
-@media (max-width: 1024px) {
-    width: 140px;
-    height: 42px;
 }
 `
 
@@ -222,6 +211,11 @@ font-weight: 600;
     margin-left: 1rem;
     font-size: 0.85rem;
     font-weight: 600;
+}
+
+@media (max-width: 360px) {
+    margin-left: 5rem;
+    margin-top: 12rem;
 }
 `
 
@@ -264,7 +258,7 @@ margin: 3rem auto auto 3rem;
 }
 
 @media (max-width: 375px) {
-    margin: 3rem auto auto 1rem; 
+    margin: 3rem auto auto 0rem; 
 }
 
 @media (max-width: 360px) {

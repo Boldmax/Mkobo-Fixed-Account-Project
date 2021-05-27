@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding-bottom: 4rem;
+    z-index: 1;
+}
+
+.CardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filter i{
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  }
+
+#labeld{
+    position: absolute;
+    display: block;
+    width: 14rem;
+    color: #233862;
+    margin-top: 1.5rem;
+    margin-left: 25rem;
+    font-size: 0.9rem;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  #labele{
+  position: absolute;
+  display: block;
+  width: 14rem;
+  color: #233862;
+  margin-top: 7rem;
+  margin-left: 2rem;
+  font-size: 12px;
+  font-weight: 400;
+  }
+  
+  #labelf{
+  position: absolute;
+  display: block;
+  width: 14rem;
+  color: #233862;
+  margin-top: 7rem;
+  margin-left: 25rem;
+  font-size: 12px;
+  font-weight: 400;
+  }
+
+@media screen and (max-width:1280px) {
+  #labeld{
+    margin-top: 2rem;
+    margin-left: 20rem;
+    }
+    
+  #labelf{
+    margin-top: 7.1rem;
+    margin-left: 21rem;
+    }  
+  }
+
+
+  @media screen and (max-width:414px){
+  .CardContainer{
+    width: 100%;
+  }
+
+    #labeld{
+    margin-top: 2rem;
+    margin-left: 18.3rem;
+    }
+      
+    #labele{
+    margin-top: 7.5rem;
+    margin-left: 1rem;
+    }
+      
+    #labelf{
+    margin-top: 7.5rem;
+    margin-left: 19.2rem;
+    }
+  }
+
+  @media screen and (max-width:384px){
+  
+      #labeld{
+      margin-left: 16.5rem;
+      }
+               
+      #labelf{
+      margin-left: 17.8rem;
+      }
+    }
+  
+  @media screen and (max-width:360px){
+    #labeld{
+        margin-top: 2rem;
+        margin-left: 14rem;
+      }
+      
+      #labele{
+      margin-top: 7.5rem;
+      margin-left: 1rem;
+      }
+      
+      #labelf{
+      margin-top: 7.5rem;
+      margin-left: 14rem;
+      }
+  }

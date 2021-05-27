@@ -4,12 +4,12 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import axios from 'axios';
-//import { GlobalState } from '../../GlobalState'
+import { GlobalState } from '../../GlobalState'
 
 
 const schema = yup.object().shape({
-    BVN: yup.string().required("BVN is required").matches(/^[0-9]+$/, "Enter a valid BVN").min(11, "Enter a valid BVN").max(11),
-    first_name: yup.string().required("Enter a valid Email Address"),
+    phone_number: yup.string().required("BVN is required").matches(/^[0-9]+$/, "Enter a valid BVN").min(11, "Enter a valid BVN").max(11),
+    fisrt_name: yup.string().required("Enter a valid Email Address"),
     last_name: yup.string().required("Enter a valid Email Address"),
     relationship: yup.string().required("Enter a valid Email Address"),
     email: yup.string().required("Password is required"),
@@ -18,7 +18,7 @@ const schema = yup.object().shape({
 
 
 export default function Nextofkin() {
-  //  const { token } = useContext(GlobalState)
+    const { userId } = useContext(GlobalState)
 
     const [relationship, setRelationship] = useState({});
     const [firstName, setFirstName] = useState({});
@@ -32,9 +32,9 @@ export default function Nextofkin() {
     });
 
     const getFromLS = () => {
-        return  localStorage.getItem('JWT')
-       }; 
-       const token = getFromLS()
+        return localStorage.getItem('JWT')
+    };
+    const token = getFromLS()
 
     const handleDisplay = () => {
         axios.get('http://localhost:4000/app/user/', {
@@ -49,7 +49,14 @@ export default function Nextofkin() {
                 setEmail(res.data[0].nextOfKin[0].email);
                 setRelationship(res.data[0].nextOfKin[0].relationship);
                 setAddress(res.data[0].nextOfKin[0].address)
-            });
+            })
+            .catch(err => console.log(err));
+    }
+
+    let onSubmit = (data) => {
+        axios.post('http://localhost:4000/kin/users/' + userId + '/create', data)
+        .then(res => console.log(res))
+        .catch(err => console.log(err));
     }
 
     useEffect(() => {
@@ -57,16 +64,6 @@ export default function Nextofkin() {
     })
 
 
-    let onSubmit = () => {
-        axios.get('http://localhost:4000/kin/users/', {
-            headers: {
-                authorization: `Bearer ${token}`
-            }
-        })
-
-        /*         axios.post('http://localhost:4000/app/users/' + id + '/update', data)
-                    .then(res => console.log(res)) */
-    }
 
     return (
         <div className="InvestmentDetails">
@@ -77,13 +74,13 @@ export default function Nextofkin() {
             <form className="contentBody" onSubmit={handleSubmit(onSubmit)}>
 
                 <label>First Name</label>
-                <InputBar name="first_name" ref={register} placeholder={firstName} />
+                <InputBar name="fisrt_name" ref={register} placeholder={firstName} />
                 <label>Last Name</label>
                 <InputBar name="last_name" ref={register} placeholder={lastName} />
                 <label>Relationship</label>
                 <InputBar name="relationship" ref={register} placeholder={relationship} />
                 <label>Phone Number</label>
-                <InputBar type="PhoneNumber" name="BVN" ref={register} placeholder={phone} />
+                <InputBar type="PhoneNumber" name="phone_number" ref={register} placeholder={phone} />
                 <label>Email</label>
                 <InputBar name="email" ref={register} placeholder={email} />
                 <label>Address</label>

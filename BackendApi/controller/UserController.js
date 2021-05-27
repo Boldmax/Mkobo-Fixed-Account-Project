@@ -9,9 +9,9 @@ let UserController = {
         const authHeader = req.headers['authorization']
         const token = authHeader && authHeader.split(' ')[1]
         if (token == null) return res.sendStatus(401)
-        console.log(`indicate:${token}`)
+       // console.log(`indicate:${token}`)
         jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
-            console.log(err)
+            // console.log(err)
             if (err) return res.sendStatus(403)
             req.user = user;
             const mail = (user.name)
@@ -42,7 +42,7 @@ let UserController = {
     },
     updateUser: async (req, res) => {
         const userUpdate = await UserModel.findOne(req.params);
-        console.log(userUpdate)
+        // console.log(userUpdate)
         userUpdate.nextOfKin = req.body;
         /* const updated = await UserModel.nextOfKin.push(req.body) */
 

@@ -211,7 +211,7 @@
     
     .main{
       position: relative;
-      height: 140vh !important;
+      height: 140vh;
       width: 100vw;
       z-index: 2;
       background-color: #0248CD;
@@ -628,7 +628,7 @@
       position: relative;
       display: block;
       width: 100vw;
-      height: 75vh !important;
+      height: 75vh;
       margin-top: 0.3rem;
       background-color: #ffffff;
     }
@@ -675,11 +675,12 @@
 
     .main{
       position: relative;
-      height: 145vh;
       width: 100vw;
       z-index: 2;
       background-color: #0248CD;
       margin-top: 0;
+      height: max-content;
+      max-height: 145vh;
     }
 
     .reasons{
@@ -748,7 +749,7 @@
     text-decoration: none;
     height: 100%;
     margin-left: 3.5rem;
-    font-size: 18px;
+    font-size: 13px;
   }
 
 
@@ -786,7 +787,7 @@
     position: relative;
     display: block;
     width: 100vw;
-    height: 100vh !important;
+    height: 100vh;
     margin-top: 0.3rem;
     background-color: #ffffff;
   }
@@ -1178,7 +1179,7 @@
     }
 
     .nav-item {
-      line-height: 30px;
+      line-height: 45px;
       margin-right: 2rem;
     }
 
@@ -1872,7 +1873,7 @@ padding-top: 2rem;
       }
   }
  
-  @media screen and (max-width: 640px), (max-height:384), (orientation:landscape) {
+  @media screen and (max-width: 640px) {
     .header-body{
       height: 135vh;
      }
@@ -1887,7 +1888,7 @@ padding-top: 2rem;
     }
 
     .testimony-main{
-      height: 100vh;
+      height: 60vh;
       width: 100vw;
     }
 
@@ -1930,18 +1931,23 @@ padding-top: 2rem;
     .nav-links {
       margin-left: -8rem;
     }
+
+    .nav-item{
+      margin-left: 1.5rem;
+    }
     
   /******************************* HEADER*******************************/ 
 
   .header-body{
-   height: 90vh;
+   height: 80vh;
   }
 
     .header-card1{
       position: absolute;
       display: block;
       width: 100%;
-      height: 90vh;
+      max-height: max-content;
+      height: 100vh;
       background-color: rgb(0, 0, 0, 0.2);
       z-index: 2;
     }
@@ -2025,9 +2031,10 @@ padding-top: 2rem;
       display: block;
       position: relative;
       width: 100%;
-      height: 100vh;
+      height: max-content;
       background-color: #ffffff;
       filter: blur(5px);
+      max-height: 60vh;
     }
     
     .header-card2 img{
@@ -2044,7 +2051,8 @@ padding-top: 2rem;
     /******************************* ADVANTAGES ****************************************/
    .main{
     position: relative;
-    height: 140vh;
+    height: max-content;
+    max-height: 140vh;
     width: 100vw;
     z-index: 2;
     background-color: #0248CD;
@@ -2116,15 +2124,18 @@ padding-top: 2rem;
   .testimony-main{
     position: relative;
     display: block;
-    height: max-content;
-    width: 100vw;
+    max-width: 100vw;
     background-color: #ffffff;
+    height: max-content;
+    max-height: 70vh;
   }
 
   .testimony-prop{
    flex-direction: column;
-   justify-content: space-around;
-   height: 140vh;
+   justify-content: center;
+   height: 55vh;
+   max-height: max-content;
+   width: 95vw;
   }
   
   .testimony-main h2{
@@ -2158,7 +2169,8 @@ padding-top: 2rem;
   }
 
   .content-position{
-    width: 50vw;
+    width: 100vw;
+    max-width: 100vw;
     display: block;
     margin: 0 auto ;
     height: max-content;
@@ -2204,13 +2216,30 @@ padding-top: 2rem;
   }
 
   @media screen and (max-width: 411px) {
+
+    .testimony-main{
+      height: max-content;
+      max-height: 70vh;
+    }
+
+    .testimony-main h2{
+      margin-bottom: -2rem;
+    }
+
     .header-body{
       width: 100vw;
+      height: 75vh;
+      min-height: 70vh;
+    }
+
+    .header-card1{
       height: 80vh;
+      max-height: 80vh;
     }
 
     .main{
-      height: 130vh;
+      height: max-content;
+      max-height: 140vh;
       margin-top: 0;
     }
 
@@ -2219,7 +2248,7 @@ padding-top: 2rem;
     }
 
     .testimony-prop{
-      height: 120vh;
+      height: 55vh;
      }
 
      .footer-container{
@@ -2237,6 +2266,11 @@ padding-top: 2rem;
       height: 90vh;
     }
 
+    .header-card1{
+      height: 100vh;
+      max-height: 100vh;
+    }
+
     .reason-card h3{
       width: 350px;
       font-size: 21px;
@@ -2251,6 +2285,13 @@ padding-top: 2rem;
       margin-left: 20px;
     }
 
+    .main{
+      height: max-content;
+      max-height: 150vh;
+      margin-top: 0;
+    }
+
+
     .footer-container{
       height: 85vh;
     }
@@ -2263,11 +2304,12 @@ padding-top: 2rem;
   @media screen and (max-width: 375px) {
 
     .header-body{
-      height: 100vh;
+      height: 85vh;
+      max-height: 85vh;
     }
 
     .header-card1{
-      height: 100vh;
+      height: 85vh;
     }
 
     #imageMove{
@@ -2307,6 +2349,7 @@ padding-top: 2rem;
       position: relative;
       display: block;
       height: max-content;
+      max-height: 65vh;
       width: 100vw;
       background-color: #ffffff;
     }
@@ -2315,14 +2358,15 @@ padding-top: 2rem;
       padding-top: 3rem;
       width: 350px;
       font-size: 28px;
+      margin-bottom: -4rem;
     }
 
     .content-position{
-      width: 60vw;
+      width: 100vw;
     }
 
     .testimony-prop{
-      height: 140vh;
+      height: 55vh;
      }
 
   /******************************* FOOTER ****************************************/
@@ -2349,6 +2393,36 @@ padding-top: 2rem;
       }  
   }
 
+  @media screen and (max-width: 360px) {
+    .header-body{
+      height: 90vh;
+      max-height: 90vh;
+    }
+
+    .header-card1{
+      height: 90vh;
+     
+    }
+
+    .main{
+      position: relative;
+      height: max-content;
+      max-height: 150vh;
+      width: 100vw;
+      z-index: 2;
+      background-color: #0248CD;
+      margin-top: 0;
+    }
+    .testimony-main{
+      height: max-content;
+      max-height: 75vh;
+      width: 100vw;
+    }
+
+    .testimony-main h2{
+      margin-bottom: -2rem;
+    }
+  }
   @media screen and (max-width: 320px) {
     .header-body{
       height: 100vh;
@@ -2384,7 +2458,7 @@ padding-top: 2rem;
      }
 
      .testimony-prop{
-      height: 140vh;
+      height: 100vh;
      }
 
      .testimony-main h2{
@@ -2404,10 +2478,10 @@ padding-top: 2rem;
     }
 
     .content-position{
-      width: max-content;
+      width: 100vw;
     }
 
     .testimony-prop{
-      width: max-content;
+      width:100vw;
      }
   }

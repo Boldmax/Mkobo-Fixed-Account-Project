@@ -50,7 +50,7 @@ export default function Navbar() {
                                 </NavLink>
                             </li>
                             <li className="nav-links">
-                                <NavLink to="/dashboard" style={{ margin: "0", padding: "0" }}>
+                                <NavLink to="/dashboard/Investment" style={{ margin: "0", padding: "0" }}>
                                     <Navbutton style={{ lineHeight: "21px", fontWeight: "600" }} type="button" >Start investing</Navbutton>
                                 </NavLink>
                             </li>

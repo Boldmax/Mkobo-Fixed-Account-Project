@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.SettingsNav{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2rem;
+    align-items: center;
+  }
+
+.mini-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rem;
+    /* margin-left: 0rem; */
+    align-self: center;
+}
+
+.mini-nav p{
+    display: block;
+    width: 18rem;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 600;
+    color: #AAC6CE;
+  }
+  
+  .mini-nav Link, p:hover{
+    color: #0248CD;
+  }
+
+#BackButton1a{
+    margin-left: 23rem;
+    }
+
+#BackButton1b{
+    margin-left: 23rem;
+    }
+
+@media screen and (max-width:414px){
+
+.security_questions{
+    margin-left: 2rem;
+}
+
+#BackButton1a{
+    margin-left: 12rem;
+    }
+
+#BackButton1b{
+    margin-left: 12rem;
+    }
+}
+
+@media screen and (max-width:384px){
+    .security_questions{
+        margin-left: 1rem;
+    }
+    }
+
+@media screen and (max-width:360px){
+    .security_questions{
+        margin-left: 0rem;
+    }
+    }

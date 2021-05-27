@@ -13,8 +13,8 @@ import { GlobalState } from "./GlobalState";
 function App() {
 
   const [show, setShow] = useState(false);
-  const [token, setToken] = useState(null)
-  const value = useMemo(() => ({ token, setToken }), [token, setToken]);
+  const [userId, setUserID] = useState(null)
+  const value = useMemo(() => ({ userId, setUserID }), [ userId, setUserID ]);
 
   const closePageHandler = () => setShow(false)
   return (

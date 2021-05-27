@@ -3,6 +3,7 @@ import Cards from './Cards';
 import Account from './Accounts';
 import CardsAndBanksNav from './CardAndBanksNav';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import './cardsAndBank.css'
 
 
 export default function CardsAndBank() {

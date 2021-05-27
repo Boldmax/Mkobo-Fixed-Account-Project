@@ -17,7 +17,7 @@ border-radius: 5px;
 }
 `
 
-export const Logout = styled.div`
+export const Logout = styled.button`
 position: relative;
 display: block;
 background-color: #ffffff;

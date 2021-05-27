@@ -13,6 +13,11 @@
     flex-wrap: wrap;
 }
 
+.filter i{
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    }
+
 #label4{
     position: absolute;
     display: block;
@@ -47,4 +52,48 @@
   font-weight: 400;
   }
 
-  
+  @media screen and (max-width:1280px) {
+    #label4{
+        margin-top: 2rem;
+        margin-left: 20rem;
+        }
+    
+    #label6{
+        margin-top: 7.1rem;
+        margin-left: 21rem;
+        }  
+    }
+
+@media (max-width: 414px) {
+    #label4{
+        margin-top: 1.5rem;
+        margin-left: 18rem;
+      }
+      
+      #label5{
+      margin-top: 7rem;
+      margin-left: 1rem;
+      }
+      
+      #label6{
+      margin-top: 7rem;
+      margin-left: 19rem;
+      }
+}
+
+@media (max-width: 384px) {
+    #label4{
+        margin-top: 1.5rem;
+        margin-left: 16.5rem;
+      }
+      
+      #label5{
+      margin-top: 7rem;
+      margin-left: 1rem;
+      }
+      
+      #label6{
+      margin-top: 7rem;
+      margin-left: 17.5rem;
+      }
+}

@@ -1,65 +1,60 @@
 import React from 'react';
-import { ViewInvestCard, Title, Head1, Head2, Head3, Head4, Rate, BackButton } from './investStyleItems.style';
-import './viewInvestment.css'
+import { ViewInvestCard, Title, Head1, Head2, Head3, Head4, Rate, BackButton, Select, Filter } from './investStyleItems.style';
+import './viewInvestment.css';
+import states from '../resources';
 
+export default function ViewInvestment({ close, handle }) {
+    /* const handleClick = () => {
 
-const states = {
-    options: [
-        {
-            Name: "HYPA Deposit",
-            InterestRate: "16.25%",
-            MaturityDate: "12-Nov-2021",
-            InvestedCapital: "1000,000.00",
-            Interest: "1,016,250.00",
-            Key: 0
-        },
-        {
-            Name: "HYPA Deposit",
-            InterestRate: "16.25%",
-            MaturityDate: "12-Nov-2021",
-            InvestedCapital: "1000,000.00",
-            Interest: "1,016,250.00",
-            Key: 1
-        },
-        {
-            Name: "HYPA Deposit",
-            InterestRate: "16.25%",
-            MaturityDate: "12-Nov-2021",
-            InvestedCapital: "1000,000.00",
-            Interest: "1,016,250.00",
-            Key: 2
-        },
-        {
-            Name: "HYPA Deposit",
-            InterestRate: "16.25%",
-            MaturityDate: "12-Nov-2021",
-            InvestedCapital: "1000,000.00",
-            Interest: "1,016,250.00",
-            Key: 3
-        },
-    ]
-}
+        states.options.map(item => {
+            const Liquidate = item.liquidate_ref
+            const withdraw = item.liquidate_ref
+            if (Liquidate === true) {
+                return close()
+            };
+            if (withdraw === false) {
+                console.log('withdraw is clicked')
+            }
+        })
+    } */
 
-export default function ViewInvestment() {
     return (
         <div className='container'>
-            <div></div>
-            <div className='CardContainer'>
+            <div className='filter'>
+                <Filter><i className='bi bi-funnel' />Filter by</Filter>
+                <Select>
+                    <option>Tenure</option>
+                    <option>Rate</option>
+                </Select>
+            </div>
+            <div>
                 {states.options.map((state, key) => {
-                    return <ViewInvestCard key={key}>
-                        <Title>{state.Name}</Title>
-                        <Head1><Rate>{state.InterestRate}</Rate> returns in 270 days</Head1>
-                        <label id='label4'>Value on maturity</label>
-                        <Head2> {state.Interest}</Head2>
-                        <label id='label5'>Invested Capital</label>
-                        <Head3>{state.InvestedCapital}</Head3>
-                        <label id='label6'>Matures on</label>
-                        <Head4>{state.MaturityDate}</Head4>
-                        <BackButton>Withdraw</BackButton>
-                    </ViewInvestCard>
+                    return <div className='CardHold'>
+                        <ViewInvestCard key={key}>
+                            <Title>{state.Name}</Title>
+                            <Head1><Rate>{state.InterestRate}</Rate> returns in 270 days</Head1>
+                            <label id='label41'>Value on maturity</label>
+                            <Head2>&#8358; {state.Interest}</Head2>
+                            <label id='label51'>Invested Capital</label>
+                            <Head3>&#8358;{state.InvestedCapital}</Head3>
+                            <label id='label61'>Matures on</label>
+                            <Head4>{state.MaturityDate}</Head4>
+                            <BackButton onClick={close}>Withdraw</BackButton>
+                        </ViewInvestCard>
+
+                        <ViewInvestCard key={key}>
+                            <Title>{state.Name}</Title>
+                            <Head1><Rate>{state.InterestRate}</Rate> returns in 270 days</Head1>
+                            <label id='label41'>Value on maturity</label>
+                            <Head2>&#8358; {state.Interest}</Head2>
+                            <label id='label51'>Invested Capital</label>
+                            <Head3>&#8358;{state.InvestedCapital}</Head3>
+                            <label id='label61'>Matures on</label>
+                            <Head4>{state.MaturityDate}</Head4>
+                            <BackButton onClick={handle} liquidate>Liquidate</BackButton>
+                        </ViewInvestCard>
+                    </div>
                 })}
-
-
             </div>
         </div>
     )

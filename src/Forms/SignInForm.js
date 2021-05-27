@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import content from "./signIndata";
 import './form.css';
 import { Link, useHistory } from "react-router-dom";
@@ -8,9 +8,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import axios from 'axios';
-import { GlobalState } from '../GlobalState'
-//import Proptypes from 'prop-types';
-//import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
+
 
 
 const schema = Yup.object().shape({
@@ -21,10 +19,6 @@ const schema = Yup.object().shape({
 
 
 export default function SignInForm() {
-     const {token, setToken} = useContext(GlobalState);
-
-    /*   axios.defaults.headers.common['Authorization'] = tokenate;
-      console.log(tokenate) */
 
     let history = useHistory();
     const { register, handleSubmit, errors } = useForm({
@@ -36,18 +30,14 @@ export default function SignInForm() {
             .then(res => {
                 const token = res.data.accessToken
                 localStorage.setItem('JWT', token);
-                             
-               // setToken(getFromLS())
-                // console.log(getFromLS())
+
+                // setToken(getFromLS())
                 if (token) {
-                    history.push('/dashboard')
-                    /*  {
-                         pathname: '/dashboard/'+ mail +'',
-                         state: { token: `${res.data.accessToken}` }
-                     } */
+                    history.push('/dashboard/Investment')
                 }
             })
     }
+
 
     return (
         <div className="signIn-container">

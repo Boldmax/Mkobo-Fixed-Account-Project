@@ -1,4 +1,4 @@
-const UserModel = require('../models/AccountShema');
+const UserModel = require('../models/ActiveInvestment');
 
 let AccountController = { 
     find: async (req, res) => {
@@ -9,10 +9,22 @@ let AccountController = {
         let allUsers = await UserModel.find()
         res.json(allUsers);
     },
-    create: async (req, res) => {
-        let newUser = new UserModel(req.body);
-        let savedUser = await newUser.save();
-        res.json(savedUser);
+    create: (req, res) => {
+        const newUser = new nextOfKinModel(req.body);
+        const { userId } = req.params;
+        newUser.userProfile = userId;
+        return newUser
+        .save()
+        .then(kin => {
+           // console.log(kin)
+            return UserModel.findByIdAndUpdate(
+                userId, { $addToSet: { nextOfKin: kin } }
+            );
+        })
+        .then((data) => {
+            return res.json(data);
+        })
+        .catch( err => console.log(err));
     },
     getAllInvestments: async (req, res) => {
         let foundUser = await UserModel.find({name: req.params.username}).populate("Account");

@@ -12,7 +12,7 @@ export default function PasswordSettings() {
                 <InputBar />
                 <label>Comfirm Password</label>
                 <InputBar />
-                <BackButton id='BackButton1' >Update</BackButton>
+                <BackButton id='BackButton1b' >Update</BackButton>
             </form>
         </div>
     )

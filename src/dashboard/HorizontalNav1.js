@@ -11,8 +11,10 @@ export default function HorizontalNav() {
         <div>
             <nav style={{ backgroundColor: "#fff" }} className="navbar navbar-expand-lg navbar-primary">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#home">
-                        <img src={logo} alt="" style={{ maxWidth: "1500px", width: "8rem", height: "3.5rem", marginLeft: "-5rem", paddingLeft: "0" }} className="d-inLinkne-block aLinkgn-top" />
+                    <a className="navbar-brand">
+                        <Link to="/" style={{ margin: "0", padding: "0", textDecoration: 'none' }}>
+                            <img src={logo} alt="" style={{ maxWidth: "1500px", width: "8rem", height: "3.5rem", marginLeft: "-5rem", paddingLeft: "0" }} className="d-inLinkne-block aLinkgn-top" />
+                        </Link>
                     </a>
                     <button className="navbar-toggler hide" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="bi bi-Linkst text-primary" style={{ fontSize: "2.9rem" }}></span>

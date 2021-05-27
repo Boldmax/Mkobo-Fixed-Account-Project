@@ -1,26 +1,26 @@
 import React, { useState } from 'react'
-import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 
-export default function Nav({ click }) {
+export default function Nav({ click, close }) {
+
+    const minimize = () => click ? "nav-components" : "nav-components active";
 
     return (
-        <div className={click ? "nav-components" : "nav-components active"}>
+        <div className={minimize()}>
             <nav className="nav-close">
                 <div className="nav-components">
-
-                    <Link to="/dashboard/Investment" style={{ margin: '0', padding: '0', textDecoration: 'none' }} className="active">
+                    <Link to="/dashboard/Investment/invest" style={{ margin: '0', padding: '0', textDecoration: 'none' }} className="active" onClick={() => close()}>
                         <p className="bi bi-graph-up "><span>Investment</span></p>
                     </Link>
-                    <Link to="/dashboard/cardsandbanks" style={{ margin: '0', padding: '0', textDecoration: 'none' }} className="active">
+                    <Link to="/dashboard/cardsandbanks/account" style={{ margin: '0', padding: '0', textDecoration: 'none' }} className="active" onClick={() => close()}>
                         <p className="bi bi-credit-card"><span>Cards & Banks</span></p>
                     </Link>
-                    <Link to="/dashboard/account" style={{ margin: '0', padding: '0', textDecoration: 'none' }} className="active">
+                    <Link to="/dashboard/account/myprofile" style={{ margin: '0', padding: '0', textDecoration: 'none' }} className="active" onClick={() => close()}>
                         <p className="bi bi-person"><span>Accounts</span></p>
                     </Link>
-                    <Link to="/dashboard/settings" style={{ margin: '0', padding: '0', textDecoration: 'none' }} className="active">
+                    <Link to="/dashboard/settings" style={{ margin: '0', padding: '0', textDecoration: 'none' }} className="active" onClick={() => close()}>
                         <p className="bi bi-gear-fill"><span>Settings</span></p>
                     </Link>
                 </div>
